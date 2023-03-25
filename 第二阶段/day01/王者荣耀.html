@@ -1,0 +1,2331 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="all" name="robots">
+<meta content="Tencent-TGideas" name="author">
+<meta content="Tencent" name="Copyright"/>
+<meta content="《王者荣耀》是腾讯天美工作室推出的英雄竞技手游，不是一个人的王者，而是团队的荣耀！5v5王者峡谷PVP对战，领略英雄竞技的酣畅淋漓！丰富的游戏模式等你参与，体验突破传统、英雄竞技新形态！ " name="description"/>
+<meta content="王者荣耀,王者,荣耀,moba手游,王者荣耀手游,王者手游,王者荣耀官网,王者荣耀免费下载,王者荣耀官方下载,王者荣耀电脑版,王者荣耀礼包,王者荣耀福利,王者下载,王者荣耀体验服,王者荣耀S29,海月,幻海映月,王者荣耀海月,王者荣耀新赛季,王者荣耀新战令" name="keywords"/>
+<title>王者荣耀官方网站-腾讯游戏</title>
+<!-- 页面设计：alvinxin | 页面制作：sonichuang | 创建：2017-06-06 | 团队博客：//tgideas.qq.com/ test-->
+<meta content="6zFCAGAmfZ" name="baidu-site-verification"/>
+<meta content="pc" name="applicable-device"/>
+<link href="https://pvp.qq.com/m/" rel="alternate"/>
+<link href="//game.gtimg.cn/images/yxzj/web201706/css/tganime.min.css" rel="stylesheet"/>
+<style>
+/*------reset------*/
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form{margin:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+em,i,b{font-style:normal;}
+ul,ol{list-style:none;}
+a{text-decoration:none;color:#363636;}
+a:hover{text-decoration:none;}
+img{display:block;border:0;border-radius:2px 2px 2px 2px;}
+button,input,select,textarea{font-size:100%;outline:none;}
+textarea{resize:none;}
+table{border-collapse:collapse;border-spacing:0;}
+td,th,ul,ol{padding:0;}
+cite{font-style:normal;}
+/*------common------*/
+.pr{position:relative}
+.pa{position:absolute}
+.fl{float:left}
+.fr{float:right}
+.clearfix{zoom:1}
+.clearfix:after{content:'\20';display:block;height:0;line-height:0;visibility:hidden;clear:both}
+.none{display:none}
+.ht{overflow:hidden;text-indent:-9999px;text-decoration:none}
+.fb{font-weight:bold}
+.fn{font-weight:normal}
+.f12{font-size:12px}
+.f16{font-size:16px}
+.f22{font-size:22px}
+.tc{text-align:center}
+.tr{text-align:right}
+/*----素材---*/
+.spr {background:url(//game.gtimg.cn/images/yxzj/web201605/main/spr.png) no-repeat;}
+.logo1 {width:285px;height:64px;}
+.logo2 {width:70px;height:64px;background-position:-285px 0;}
+.main-nav li:hover,.download_btn,.guard_btn,.tiyan_btn,.item_title,.more_btn,.mask-play-ico,.icon_arrow,.icon_watch,.ico-play{background:url(//game.gtimg.cn/images/yxzj/web201706/images/comm/index.png) no-repeat;display:inline-block;}
+.download_btn{position:relative;width:236px;height:128px;background-position:0 -219px;overflow:hidden;}
+.guard_btn{width:236px;height:106px;background-position:0 -350px;}
+.tiyan_btn{width:236px;height:108px;background-position:0 -461px;}
+.strategy_center .item_title{width:140px;height:26px;background-position:0 -106px;}
+.skin_center .item_title{width:140px;height:25px;background-position:0 -144px;}
+.match_center .item_title{width:140px;height:24px;background-position:0 -184px;}
+.buy_ticket{position:absolute;top:0;right:68px;padding-left:22px;background:url(//game.gtimg.cn/images/yxzj/web201706/images/comm/index.png)no-repeat -243px -85px;color:#323235;width: 70px; height: 22px; border: 1px solid #f3c258;border-radius: 3px;box-sizing: border-box;text-indent: 10px;line-height: 19px;}
+.more_btn{position:absolute;top:0;right:0;padding-left:22px;background:url(//game.gtimg.cn/images/yxzj/web201706/images/comm/index.png)no-repeat -252px 4px;color:#999;}
+.icon_arrow{position:absolute;top:20px;left:42px;width:11px;height:6px;background-position:-257px  -28px;}
+.icon_watch{width:14px;height:14px;background-position:-256px  -43px;margin-right:10px;vertical-align:middle;}
+.arrow-ico {display:inline-block;width:7px;height:6px;margin:10px 0 0 15px;background-position:-348px -86px;}
+/*font-face*/
+@font-face {
+    font-family:'light';
+    src:url('//game.gtimg.cn/images/yxzj/web201706/images/comm/light.eot');/* IE9 Compat Modes */
+    src:url('//game.gtimg.cn/images/yxzj/web201706/images/comm/light.eot?#iefix') format('embedded-opentype'),
+         url('//game.gtimg.cn/images/yxzj/web201706/images/comm/light.woff') format('woff'),
+         url('//game.gtimg.cn/images/yxzj/web201706/images/comm/light.ttf')  format('truetype');
+}
+/*------private------*/
+body{padding-top:42px;background:#fff;font:14px/1.5 "Microsoft YaHei",Tahoma,"simsun",sans-serif;color:#323235;}
+.wrapper{/*background:url(//game.gtimg.cn/images/yxzj/web201605/top_banner/bg_wrapper2.jpg) no-repeat center top;*/overflow: hidden;position:relative;min-width:1280px;}
+.kv-bg,#kv-canvas{overflow: hidden;position:absolute;left:0;top:0;width:100%;height:1300px;background-repeat:no-repeat;background-position:center top;}
+@media screen and (min-width: 1920px) {
+  .kv-bg,#kv-canvas{background-size: 100% auto;}
+}
+#kv-canvas {height: 540px;}
+.kv-bg video{width: 1920px;height:1100px;position: absolute;left:50%;top:0;margin-left:-960px;}
+.logo{left:0;top:16px;z-index:100;background:url(//game.gtimg.cn/images/yxzj/web201706/images/comm/logo.png) no-repeat center center;width:200px;height:54px;text-indent:-999px;overflow:hidden;}
+.kv_link{position:absolute;z-index:3;width:1200px;height:440px;top:90px;left:50%;margin-left:-600px;outline:none;text-indent:-9999px;overflow:hidden;background:url(#);}
+/*----header----*/
+.header{position:absolute;left:0;top:42px;width:100%;min-width:1300px;height:84px;z-index:99;background:#000;background:rgba(0,0,0,0.8);}
+.header-inner{width:1300px;height:84px;margin:0 auto;position:relative;}
+.header-dialog{position:absolute;left:0;top:0;z-index:9999;}
+.sub-nav {position:absolute;top:83px;left:0;width:100%;background:#000;background:rgba(0,0,0,0.7);z-index:3;transition: all .3s ease; overflow: hidden;height: 0;box-sizing: border-box;} 
+.header:hover .sub-nav{height: 285px;}
+.sub-nav-inner {width:890px;height:240px;margin:0 auto;overflow:hidden;zoom:1;padding-top:15px;padding-bottom:30px;padding: 15px 0 30px 50px;}
+.view-btn{position:absolute;z-index:999;width:500px;height:186px;top:-190px;left:10px;outline:none;}
+.main{position:relative;min-height:600px;z-index:2;}
+.main-nav{width:890px;padding-left:230px;}
+.main-nav li{float:left;width:115px;height:84px;text-align:center;}
+.main-nav li:hover{}
+.main-nav li:hover a{color:#e4b653;}
+.main-nav li:hover em{color:#91763f;}
+.main-nav a{display:block;width:110px;height:64px;padding:20px 0 0;color:#c9c9dd;font-size:18px;line-height:30px;}
+.main-nav a:hover{text-decoration: none;}
+.main-nav em{display:block;padding-top:5px;-webkit-transform:scale(0.95);-o-transform:scale(0.95);font-size:12px;line-height:16px;color:#858792;}
+.main-nav .nav-search{width: 38px;}
+.main-nav .nav-search a{display: block;width: 27px; height: 26px;background: url(//game.gtimg.cn/images/yxzj/web201706/images/comm/nav_search.png); margin: 29px auto 0;padding: 0;}
+.main-nav .nav-search:hover{background: none;}
+.login_pannel{right:0px;top:21px;width:182px;}
+.user_pic{float:left;margin-right:7px;}
+.user_pic img{border:1px solid #d9ad50;border-radius:42px;}
+.per-infor{float:left;width:130px;}
+.view-btn {position:absolute;z-index:999;width:500px;height:186px;top:-190px;left:334px;outline:none;overflow:hidden;text-indent:-9999px;text-decoration:none;}
+.down-nav{float:left;display:inline;width:110px;padding:2px 2.5px 0;text-align:center;white-space:nowrap;}
+.down-nav a{height:30px;line-height:30px;display:block;padding:0;font-size:14px;color:#c9c9dd;}
+.down-nav a:hover{color:#f3c258;text-decoration:underline;}
+.down-nav .down-nav-fans{padding-right:16px;}
+.down-nav .icon-guard,.down-nav .icon-health,.down-nav .icon-fans,.down-nav .icon-hot{overflow:hidden;display:inline-block;*display:inline;*zoom:1;width:24px;height:24px;vertical-align: middle;background: url(//game.gtimg.cn/images/yxzj/web201706/images/comm/index.png) no-repeat -136px -5px;}
+.down-nav .icon-health{background-position:-137px -36px;}
+.down-nav .icon-fans{background-position:-137px -68px;}
+.down-nav .icon-hot{background-position:-163px -68px;padding-right:2px;}
+.info-box{position:relative;margin:401px auto 0;width:1200px;height:115px;background:url(//game.gtimg.cn/images/yxzj/web201605/top_banner/bg_header.png) no-repeat;}
+.login-box{width:408px;padding:12px 10px;}
+.unlogin_info{color:#858792;}
+.unlogin_info a{color:#ffffff;font-size:16px;}
+.user-name{color:#858792;white-space:nowrap;}
+.user-name em{font-size:16px;color:#ffffff;}
+.user-name a{color:#8ea0b0;margin-left:10px;}
+.personal_link a{color:#8ea0b0;}
+.userinfo-list{display:none;}
+.userinfo-list li{float:left;display:inline;width:68px;height:46px;margin-right:2px;background:#0b3b61;border:1px solid #0c3253;border-radius:5px;overflow:hidden;}
+.userinfo-list em{display:block;color:#b3bbc5;margin-top:3px;height:20px;overflow:hidden;}
+.userinfo-list i{color:#406380;font-size:12px;}
+.main{padding-top:540px;width:1200px;margin:0 auto;}
+.main_top{width:1200px;height:342px;background:url(//game.gtimg.cn/images/yxzj/web201706/images/comm/rotate_bg.png) no-repeat left top;position: relative;}
+.rotate{width:605px;height:342px;}
+.news_center{width:325px;height:342px;overflow:hidden;padding:0 17px;}
+.download_pannel{width:236px;height:342px;position: relative;}
+.download_pannel a{display:block;}
+.tab-hd{border-bottom:1px solid #000;}
+.tab-hd li{float:left;width:52px;font-size:14px;text-align:center;line-height:45px;height:45px;padding-bottom:3px;}
+.tab-hd li a{display:inline-block;color:#b8b9c5;}
+.tab-hd li.on{padding:0;border-bottom:3px solid #f3c258;}
+.tab-hd li:hover a,.tab-hd li.on a{color:#f3c258;}
+.newsTab{position:relative;width:325px;}
+.tab_more{position:absolute;top:10px;right:10px;width:52px;display:block;color:#b8b9c5;text-align:center;font-size:14px;}
+/*--轮播图---*/
+.ggBox { width:604px; height:342px;}/*修改成广告图片的尺寸即可*/
+.ggBox { position:relative; background:#000; overflow:hidden}
+/*以下是轮播的图片样式，不用修改*/
+.adPic { position:absolute; width:604px; height:298px; left:0; top:0}
+.adPic a { display:block; width:100%; height:100%; overflow:hidden; position:absolute; left:0; top:0; background:#0e97dc}
+.adPic img { width:100%; height:100%; position:absolute; top:0; left:0}
+.adPic p { position:relative; padding-top:50px}
+.loadI { width:130px; text-align:center; line-height:20px; color:#FFF; background:#000; margin:0px auto; display:block}
+.adPicUl { width:1000%; height:100%; overflow:hidden; -webkit-transition: all 0.1s linear; -webkit-transform-style: preserve-3d;-webkit-backface-visibility: hidden}
+.adPicUl li { float:left; width:14.3%; height: 100%;}
+.adPicUl a { display:block; width:100%; height: 100%}
+.adPicUl img { display:block; width:100%; height:100%}
+/*以下是轮播小按钮样式，可按设计稿自己修改~*/
+.adBtn { position:absolute; z-index:2; left: 0; right:0; bottom:0; width:604px;height:44px;overflow:hidden;}
+.adBtn a { display:block; float:left;  width:120.8px;height:44px;line-height:44px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;cursor:pointer;text-align:center;color:#b1b2be;}/*小按钮样式*/
+.adBtn a.on { background:rgba(255,255,255,0.15);color:#f3c258;}/*小按钮当前帧样式*/
+.adBtn a:hover {background:rgba(255,255,255,0.15);color:#f3c258;}
+.news-list0{display:none;}
+.dis{display:block;}
+.news-list li{margin-bottom:9px;overflow:hidden;}
+.news_center  .news-list li{margin-bottom:11px;}
+.news_center  .news-list .news-time{color:#999;}
+.match_center .news-type{display:none;height:19px;line-height:19px;margin-right:12px;background:#e3e3e3;border-radius:10px;border:2px solid #e3e3e3;text-align:center;color:#999999;text-indent:2px;}
+.news_center  .news-type{ color: #ff3636;margin-right: 5px;font-size: 12px;display: inline-block;line-height: 16px; border: 1px solid currentColor;vertical-align: top;margin-top: 2px; width: 32px;text-align: center;border-radius: 2px;}
+.news_center  .type-gonggao{color: #f4be19;}
+.news_center  .type-xinwen{color: #1e96ab;}
+.news_center  .type-huodong{color: #ff3636;}
+.news_center  .type-saishi{color: #4d9cff;}
+.news_center  .type-youhua{color: #6a69ff;}
+.news-txt{color:#b8b9c5;font-size:14px;}
+.match_center .news-txt{text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.news-title{width: 230px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;display: inline-block;vertical-align: top;}
+.news-txt:hover{text-decoration:underline;}
+.news-time{font-size:12px;color:#b8b9c5;}
+.news-list .line-sp{width:294px;height:36px;line-height:36px;padding:0 15px;margin-top:18px;text-align:center;font-size:28px;color:#333333;background:#414046;}
+.news-list .line-sp a{color:#f3c258;font-size:18px;}
+.news-list .line-sp .news-type,.news-list .line-sp .news-time{display:none;}
+.quick_entrance{overflow: hidden;height:134px;margin:28px auto 34px;letter-spacing:-0.35em;margin-right:-15px;}
+.quick_entrance a{display:inline-block;*display:inline;*zoom:1;width:291px;height:134px;margin-right:12px;overflow: hidden;}
+.quick_entrance img{display:block;width:100%;}
+.quick_entrance a:nth-last-child(1){margin-right:0;}
+/*----攻略、皮肤赛事中心---*/
+.main_item{margin-bottom:28px;}
+.strategy_center{
+	width:872px;
+	min-height:528px;
+	margin-right:33px;}
+.strategy_center .strategy_center{margin-bottom:0;}
+.strategy_center .item_subnav{margin-bottom:5px;}
+.item_thirdnav{position:relative;zoom:1;line-height:26px;display: none;padding: 8px 0 9px;}
+/* .item_thirdnav::-webkit-scrollbar {
+	width: 1px;
+  display: none;
+} */
+/* #item_thirdnav0 .title{
+	width: 1020px;
+	background-color:red;
+} */
+.item_thirdnav .title{text-indent:8px;cursor:pointer;padding:8px 0 9px;}
+.item_thirdnav .title .item_hero{display: inline-block;*display: inline;*zoom:1;padding-right:20px;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAGAQMAAAAv/Pa7AAAABGdBTUEAALGPC/xhBQAAAAZQTFRFAAAA88JYjpkYTAAAAAF0Uk5TAEDm2GYAAAAaSURBVAjXY/j/gKH+AIN9A4M8AwMfAwMLAwA4rgQP6QNOyQAAAABJRU5ErkJggg==') no-repeat right center;}                  
+.item_thirdnav .title a{height:24px;line-height:24px;padding:0 13px 0 8px;border:1px solid #e5e5e5;border-radius:10px;background:#f5f5f5;font-size:14px;color:#333;margin-right:8px;display:inline-block;margin-bottom: 5px;}
+.item_thirdnav .title .on,.item_thirdnav .title a:hover{border-color:#f3c258;background:#f3c258;color:#fff;}
+.item_thirdnav .dropdown{display:none;position:absolute;top:42px;left:0;z-index:100;background:#fff;border:1px solid #e5e5e5;height:337px;}
+#item_thirdnav2 {animation-fill-mode: initial;}
+.dropdown .hero_type{float:left;width:78px;text-align:center;background:#f5f5f5;height:337px;}
+.dropdown .hero_type li{height:42px;line-height:42px;cursor:pointer;}
+.dropdown .hero_type li:hover,.dropdown .hero_type li.on{background:#f3c258;color:#fff;}
+.dropdown .hero_list{float:left;width:715px;height:310px;overflow-y:auto;padding:12px 22px;}
+.item_header{position:relative;zoom:1;margin-bottom:16px;}
+.item_title{font-size:22px;line-height:25px;text-indent:33px;font-weight:600;letter-spacing:1px;}
+.item_subnav{width:872px;height:32px;line-height:29px;background:#f5f5f5;margin-bottom:12px;border-bottom:none;}
+.item_subnav a{width:289px;display:block;float:left;font-size:14px;color:#999;text-align:center;border-bottom:3px solid #f5f5f5;}
+.item_subnav a:hover,.item_subnav .on{border-bottom:3px solid #f3c258;color:#333333;}
+.item_subnav .split{width:1px;height:20px;overflow:hidden;float:left;background:#e1e1e1;display:inline-block;margin:5px 0 0px;}
+.match_center .item_subnav .split:nth-last-child(1){display:none;}
+.skin_center{width:295px;height:528px;}
+.skin_center .item_subnav{width:293px;margin-bottom:19px;}
+.skin_center .item_subnav a{width:97px;}
+.video_list li{float:left;width:209px;margin:0 12px 30px 0;position:relative;}
+.video_list li:nth-child(4n){margin-right:0;}
+.video_list a{position:relative;display:block;width:212px;}
+.video_list img{width:209px;height:125px;}
+.video-tit{display:block;height:40px;overflow:hidden;color:#333333;margin-top:10px;}
+.video_list .play-bar{position:absolute;top:104px;left:0;width:189px;height:22px;line-height:22px;padding:0 10px;color:#fff;background:rgba(0,0,0,0.6);font-size:12px;border-radius:0 0 2px 2px;}
+.video_list .ico-play{padding-left:15px;background-position:-256px -59px;}
+.video_list .mask{width:209px;height:127px;top:0px;left:0px;filter:Alpha(opacity=60);opacity:rgba(0,0,0,0.6);background:rgba(0,0,0,0.6);display:none;cursor:pointer;border-radius:5px;}
+.video_list .mask-play-ico{width:40px;height:40px;display:block;margin:40px auto 0;background-position:-192px -64px;}
+.video_list li:hover .mask{display:block;}
+.match-list-l .news-txt{width: 470px;}
+/*---最新英雄皮肤----*/
+.skin_center .new_hero{display:block;width:294px;height:224px;border-radius:2px;margin-bottom:10px;}
+.skin_center .new_hero_bottom{padding:10px 15px;height:47px;border:1px solid #e5e5e5;border-top:none;border-radius:0 0 2px 2px;}
+.skin_center p{color:#999999;font-size:12px;text-align:right;}
+.skin_center .new_hero_name{font-size:18px;color:#333333;font-weight:bold;}
+.skin_center .new_hero_bottom p{text-align:left;}
+.skin_center .hero_pic_list p{color:#999;}
+.skin_center .hero_pic_list li{position:relative;width:68px;height:173px;float:left;margin:0 7px 12px 0 ;cursor:pointer;vertical-align:middle;display:table-cell;}
+.skin_center .hero_pic_list li:nth-last-child(1){margin-right:0;}
+.skin_center .hero_pic_list li:nth-child(4n){margin-right:0;}
+.skin_center .hero_pic_list img{display:block;}
+.skin_center .hero_pic_list .hero_mask{display:none;position:absolute;top:0;left:0;background:rgba(0,0,0,0.88);width:68px;height:173px;}
+.skin_center .hero_pic_list .hero_name{overflow:hidden;display:none;position:absolute;top:0px;left:26px;text-align:center;color:#f3c258;font-size:14px;width:34px;height:100%;line-height:16px;padding-left:2px;
+	-ms-writing-mode:tb-lr;-webkit-writing-mode:vertical-r;writing-mode:vertical-lr;letter-spacing:0.3em;word-break:break-all;
+}
+.hero_pic_list li:hover .hero_mask,.hero_pic_list li:hover .hero_name{display:block;}
+.skin_center .hero_pic_list .free-hero-notice{text-align:left;font-size:1.1em;padding-bottom:10px;margin-top:-8px;}
+/*---赛事中心---*/
+.match_center {margin-right:33px;width:872px;}
+.match_center .item_subnav a{width:auto; padding: 0 18px;}
+/* .match_center .item_subnav a{width:144px;} */
+.match_center .item_subnav a:nth-last-child(1){width:177px;}
+.match_center .item_subnav{overflow:hidden;margin-bottom:19px;}
+.match_center .news-txt{color:#333;}
+.herolist li{width:60px;float:left;text-align:center;margin:0 26px 26px 0;font-size:14px;cursor:pointer;}
+.herolist li img{display:block;width:60px;height:60px;}
+.match_center .news-type{font-size:12px;display:block;}
+.match_center .news-list .line-sp{background:none;width:577px;margin:0;padding:0;height:66px;line-height:32px;}
+.match_center .line-sp a{width:577px;font-size:24px;color:#333;text-align:left;}
+.match_center .line-sp .news_sub_title{line-height:23px;font-size:14px;color:#666666;width:450px;font-weight:normal;}
+.match_center .line-sp .news_sub_title:hover{text-decoration:none;}
+.match_news_pic{width:211px;height:260px;display:block;float:left;margin-right:19px;}
+.match_news_pic img{width:211px;height:260px;}
+.match_news_list  .news-list{float:left;width:630px;}
+.match_news{margin-bottom:15px;}
+.match_schedule{width:295px;float:left;}
+.match_schedule .item_subnav{width:293px;margin-bottom:0;}
+.match_schedule .item_subnav span{display:block;float:left;font-size:14px;color:#999;text-align:center;}
+.match_schedule .item_subnav .col1{width:83px;margin-right:0;}
+.match_schedule .item_subnav .col2{width:43px;height:29px;margin-right:0;background:#f5f5f5;}
+.match_schedule .item_subnav a:hover{border-bottom:none;}
+.match_schedule .item_subnav a{border:none;}
+.match_schedule .item_subnav a:hover{color:#999;border:none;}
+.match_schedule .item_content span{display:inline-block;}
+.match_schedule ul{margin-bottom:21px;}
+.match_schedule li{height:67px;line-height:67px;border-bottom:1px solid #e5e5e5;}
+.match_schedule .match_time{width:80px;color:#333333;font-size:12px;text-align:center;vertical-align:top;}
+.match_schedule .team_name{width:79px;height:67px;color:#333333;font-size:14px;text-align:center;}
+.match_schedule .team_name em{display:inline-block;*display:inline;*zoom:1;font-size:12px;line-height:24px;vertical-align:top;white-space:nowrap;}
+.match_schedule .team_name_icon{overflow:hidden;display:block;width:25px;height:25px;margin:10px auto 0 auto;border-radius:50%;}
+.match_schedule .vs{font-size:14px;width:43px;color:#f3c258;text-align:center;vertical-align:top;}
+.match_schedule .item_title{width:140px;height:24px;background-position:-157px -106px; white-space: nowrap;}
+.match_adver{width:293px;height:159px;margin-bottom:15px;}
+.match_adver a{ display: block;}
+.match_adver img{width:293px;height:159px; display: block;}
+/*----footer1----*/
+.foot-media,.foot-t .media-pic{display: none;}
+.footer-wrap{position:relative;z-index:2;height:362px;background:url(//game.gtimg.cn/images/yxzj/web201605/top_banner/bg_footer.jpg) no-repeat center 0;}
+.footer-wrap img{display:inline-block;}
+.footer{width:1200px;padding-top:80px;margin:0 auto;}
+.foot-t{padding-bottom:10px;margin-bottom:20px;border-bottom:2px solid #d4d4d4;}
+.foot-logo{width:377px;}
+.logo1{width:285px;height:64px;}
+.logo2{width:70px;height:64px;background-position:-285px 0;}
+.foot-tips{width:508px;}
+.foot-tips em{margin-right:12px;color:#6d6d6d;}
+.foot-tips .intro{font-size: 12px;color: #666;margin-top:6px;}
+.foot-media{width:285px;margin-top:20px;background:#f7f7f7;color:#666666;cursor:pointer;}
+.media-tit{width:270px;height:30px;line-height:30px;padding-left:10px;border:3px solid #b8b8b8;}
+.arrow-ico-btn{top:6px;right:3px;width:38px;height:24px;border-left:1px solid #b8b8b8;}
+.media-list{width:280px;height:200px;margin-top:-3px;border:3px solid #b8b8b8;overflow-y:auto;background-color:#F7F7F7}
+.media-list a{display:block;padding-left:15px;height:28px;line-height:28px;background:#f7f7f7;}
+.media-list a:hover{background:#3589dd;color:#ffffff;text-decoration:none;}
+.foot-b,.foot-b a{color:#646467;}
+.foot-b{float:right;width:632px;text-align:left;padding-top:18px;}
+.foot-txt{overflow:hidden;margin:5px 0;}
+.foot-t .media-pic{margin-top:17px;margin-left:36px;letter-spacing:-0.35em;width: 480px;text-align:right}
+.foot-t .media-pic a{letter-spacing:normal;display:inline-block;*display:inline;*zoom:1;height:36px;background:url(//game.gtimg.cn/images/yxzj/web201706/images/comm/cooperative-bg.png) no-repeat;}
+.foot-t .media-pic .m1{width:108px;background-position:0 0px;}
+.foot-t .media-pic .m2{width:90px;background-position:0 -36px;}
+.foot-t .media-pic .m3{width:64px;background-position:-10px -72px;}
+.foot-t .media-pic .m4{width:72px;background-position:0 -108px;}
+.foot-t .media-pic .m5{width:63px;background-position:0 -144px;}
+.foot-t .media-pic .m6{width:75px;background-position:0 -180px;}
+.foot-b .cb{text-align:left;}
+/*----footer2----*/
+.footer-wrap2{height:502px;background:#3d4253 url(//game.gtimg.cn/images/yxzj/web201605/page/footer_bg.jpg) no-repeat center 0;color:#82879b;}
+.footer-wrap2 .foot-t{border-bottom:2px solid #82879b;}
+.footer-wrap2 .logo1{background:url(//game.gtimg.cn/images/yxzj/web201605/page/footer_logo.png) no-repeat;}
+.footer-wrap2 .logo2{background:url(//game.gtimg.cn/images/yxzj/web201605/page/footer_logo.png) no-repeat -285px 0;}
+/*----pop----*/                 
+.pop{width:530px;height:254px;background:url(//game.gtimg.cn/images/yxzj/web201605/main/login.jpg) no-repeat;}
+.close{right:0;top:0;width:40px;height:40px;background:url(about:blank);}
+.wx-login{top:143px;left:60px;width:197px;height:46px;background:url(about:blank);}
+.qq-login{top:143px;left:272px;width:197px;height:46px;background:url(about:blank);}
+.pop2{width:530px;height:354px;background:url(//game.gtimg.cn/images/yxzj/web201605/main/sec.jpg) no-repeat;} 
+.pop3{width:530px;height:420px;background:url(//game.gtimg.cn/images/yxzj/web201605/main/sec2.jpg) no-repeat;} 
+.se-input{padding:117px 0 0 50px;}
+.se-input select{display:block;width:430px;height:37px;line-height:37px;margin-bottom:10px;}
+.se-checkbox {position: relative;width: 404px;padding-left: 26px;padding-top: 10px;font-size: 14px;color: #fff;line-height: 24px;}
+.se-checkbox input {position: absolute;left: 0;top: 14px;margin:0;width: 16px;height: 16px;-webkit-appearance: auto;appearance: auto;}
+.se-btn{padding:16px 0 0 146px;position: absolute;bottom: 45px; left: 0;right: 0;}
+.se-btn a{width:116px;height:34px;margin-right:13px;opacity: 0;}
+/*----位----*/
+.icon{ background:url(//game.gtimg.cn/images/yxzj/web201605/page/sprite.png) no-repeat;text-indent:-9999px;display:block;}
+.con1-pos{width:100%;margin-bottom:40px;height:20px;line-height:20px;color:#464547;font-size:16px;}
+.con1-pos .tb1{ background-position:0 -4px;width:18px;height:18px;margin-right:9px;}
+.con1-pos a,.con1-pos span{ margin-right:8px;}
+.con1-pos a{ text-decoration:underline;}
+/*-----------*/
+.dia-zhushou{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/zhushou.png);}
+.dia-weixin{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/weixin.png);}
+.dia-story{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/story.png);}
+.dia-skin{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/skin.png);}
+.dia-version{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/version.png);}
+.dia-kefu{width:368px;height:358px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/kf.png);overflow:hidden;}
+.dia-kefu p{margin:266px 0 0 76px;color:#b7bde1;font-size:18px;}
+.dia-kefu a{color:#7b96e4;}
+.dia-close{position:absolute;top:0;right:0;width:45px;height:45px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/close.png);}
+.dia-qq{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/shouq.png);}
+.dia-vote1001{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201706/images/comm/vote1001.jpg);}
+.dia-qgc{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/qgc.jpg);}
+.dia-applets{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/applets.png);}
+.dia-applets2{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/applets2.png);}
+.download-popup .dia-con{width:auto;background:none;}
+.dia-download{padding:30px  76px 23px 48px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/down_bg.png);}
+.dia-download .code{float:left;margin-right:36px;}
+.dia-download .btnlist{float:left;}
+.dia-download .btnlist a,.download-popup .dia-close{width:212px;height:46px;display:block;margin-bottom:9px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/down.png);}
+.dia-download .btnlist .pc{background-position:0 -112px;}
+.dia-download .btnlist .ios{background-position:0 -56px;}
+.dia-download .btnlist .android{background-position:0 0;}
+.dia-download .btnlist .android1{background-position:0 -169px;}
+.download-popup .dia-close{top:10px;right:10px;width:36px;height:36px;background-position:-264px -17px;}
+.dia-weiquan{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/weiquan.png);}
+.dia-hero-pop{width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/hero_pop.png);}
+.dia-wgc {width:306px;height:297px;background:url(//game.gtimg.cn/images/yxzj/web201605/page/wgc.png);}
+/* 直播弹窗 */
+.pop-video{ width:929px;height:657px;position:relative;display:none;}
+.pop-video .pop-video-db{ padding-top:142px;}
+.pop-video .pop-video-close{width:40px;height:40px;position:absolute;top:8px;right:1px;display:block;text-indent:-999em;}
+.pop-video .pop-video-small{width:40px;height:40px;position:absolute;top:8px;right:69px;display:block;text-indent:-999em;}
+.pop-video .main {width:890px;margin:0 auto;padding-top:0;}
+.pop-video .tab-i {background:url(//game.gtimg.cn/images/yxzj/web201605/main/pop-base.png) no-repeat 0 0;width:460px;height:114px;float:left;cursor:pointer;}
+.pop-video .on {color:#f00;background:url(//game.gtimg.cn/images/yxzj/web201605/main/pop-base.png) no-repeat 0 -115px !important;}
+.pop-video .hy{ background:url(//game.gtimg.cn/images/yxzj/web201605/main/pop-base.png) no-repeat -34px -257px;width:186px;height:103px;margin:9px auto 0;display:block;}
+.pop-video .wy{ background:url(//game.gtimg.cn/images/yxzj/web201605/main/pop-base.png) no-repeat -292px -257px;width:153px;height:111px;margin:1px auto 0;display:block;}
+.pop-video .video{width:890px;height:490px;}
+.pop-video .more{ background:url(//game.gtimg.cn/images/yxzj/web201605/main/pop-base.png) -1px -378px;width:171px;height:43px;text-align:center;line-height:43px;font-size:18px;color:#3f2227;position:absolute;top:104px;right:60px;}
+.videopop {width:420px;height:236px;display:none;position:fixed;right:10px;bottom:10px;z-index:9999;}
+.clspop {position:absolute;width:50px;height:50px;display:block;right:0;top:0;font-size:35px;line-height:40px;text-align:center;color:#fff;z-index:9999;}
+.mod_player_float {position:fixed;right:100px;bottom:20px;width:512px!important;height:288px!important;z-index:9990;background:0 0;transition:none;cursor:move;}
+.pop-video-link{width:137px;height:36px;position:absolute;top:72px;right:22px;display:block;text-indent:-999em;}
+/*m-popup*/
+.m-popup{position: fixed;z-index:9;right:10px;bottom:0;width:300px;height:300px;}
+	.m-popup-close{position: absolute;z-index:10;right:10px;top:10px;font-size:36px;line-height: 36px;color: #ffd28d;font-weight: normal;font-family:simsum;}
+	.m-popup-content{position: absolute;left:0;top:0;width:300px;height:300px;}
+	.m-popup-link{display: block;width:100%;height:100%;}
+
+canvas {position: absolute;z-index: 1;top: 0;left: 0;width: 100%;}
+.canvas-container {position: relative;}
+#bottom-canvas {position: initial; width: 100%; height: 150px;}
+
+.quick_entrance .tganime-image-hover:hover img {transform: scale(1.1);}
+.more_btn:hover {color: #f3c258;}
+
+.hudongying{background: url(//game.gtimg.cn/images/yxzj/web201706/images/comm/hudongying.png); width: 160px; height: 212px; position: fixed; bottom: 20px; right: 35px;z-index: 3;}
+
+@keyframes dajiShake {
+	0% {
+		transform: rotate(30deg);
+	}
+	25% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-30deg);
+	}
+	75% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.tganime-header-fix {transition: none;}
+.tganime-image-hover img {transition: transform .4s ease;}
+.tganime-fadein-trigger:hover .tganime-fadein-child {transition: opacity .4s ease;}
+.tganime-fadein-trigger .tganime-fadein-child {transition: opacity .3s ease;}
+.kv_link_animate{top:408px;width: 348px;height: 116px;background: url(//game.gtimg.cn/images/yxzj/act/a20190322test/btn_sprite.png) no-repeat;background-size:10440px 116px; margin-left: -174px;overflow: visible;animation: tree 2s infinite steps(30, end) both;}
+@keyframes tree{
+	0%{
+		background-position: 0 0;
+	}
+	100%{
+		background-position: -10440px 0;
+	}
+}
+/* 适龄提示 */
+.shiling{position: absolute;top: 0;right: -58px; width: 53px; height: 68px; background: url(//game.gtimg.cn/images/yxzj/web201706/images/comm/shiling.png);cursor: pointer;}
+.shiling-pop{position: fixed; top: 0; left: 0;right: 0;bottom: 0;z-index: 4;display: none;}
+.shiling-pop .pop-mask{position: absolute;background: #000;top: 0; left: 0;right: 0;bottom: 0;opacity: .7;}
+.shiling-pop .pop-inner{color: #a9aed0;position: absolute;top: 50%;left: 50%;margin:-212.5px 0 0 -415px;width: 830px;height: 425px;background: url(//game.gtimg.cn/images/yxzj/web201706/images/comm/shiling_pop.png);}
+.shiling-pop .pop-close{position: absolute; top: 15px;right: 15px;width: 32px;height: 32px;background: url(//game.gtimg.cn/images/yxzj/web201706/images/comm/shiling_close.png);cursor: pointer;}
+.shiling-pop .pop-title{font-size: 18px;margin-top: 13px;line-height: 60px;padding: 0 40px;}
+.shiling-pop .pop-desc{font-size: 14px;line-height: 2;max-height: 303px;overflow: auto;padding: 0 40px;}
+.shiling-pop .pop-desc p{margin-bottom: 20px;}
+.fanchenmi{position: absolute;top: 78px;right: -58px; width: 53px; height: 47px; background-image: url(//game.gtimg.cn/images/yxzj/web201706/images/comm/fanchenmi.png);background-size: contain;background-repeat: no-repeat;cursor: pointer;}
+
+@-webkit-keyframes lightmove {
+		0% {
+				left: -150px;
+				top: -120px;
+		}
+
+		to {
+				left: 150px;
+				top: 120px
+		}
+}
+@-o-keyframes lightmove {
+		0% {
+				left: -150px;
+				top: -120px;
+		}
+
+		to {
+				left: 150px;
+				top: 120px
+		}
+}
+@-moz-keyframes lightmove {
+		0% {
+				left: -150px;
+				top: -120px;
+		}
+
+		to {
+				left: 150px;
+				top: 120px
+		}
+}
+@keyframes lightmove {
+		0% {
+				left: -150px;
+				top: -120px;
+		}
+
+		to {
+				left: 150px;
+				top: 120px
+		}
+}
+/* .download-btn {
+	position: relative;
+	display: block;
+	width: 236px;
+	height: 128px;
+	background: url(//game.gtimg.cn/images/yxzj/web201706/images/index/download.png) no-repeat;
+	overflow: hidden;
+} */
+#download-btn-ani {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 50px;
+	background-color: rgba(255,255,255,0.8);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-animation: lightmove 1.6s ease-in infinite;
+	-o-animation: lightmove 1.6s ease-in infinite;
+	animation: lightmove 1.6s ease-in infinite;
+	filter: blur(32px);
+}
+</style>
+<script>
+	var isdSpeedRecorderInit = new Date();
+	(function(){var a=navigator.userAgent;if(-1!=a.indexOf("iPhone")||-1!=a.indexOf("iPad")||-1!=a.indexOf("iPod")||-1!=a.indexOf("Android")){a=document.referrer;if(-1<a.indexOf("baidu.com")||-1<a.indexOf("sogou.com")||-1<a.indexOf("haosou.com")||-1<a.indexOf("hao76.com"))if(a=void 0,window.sessionStorage)sessionStorage.setItem("channel","seo");else{var a=a||0,b="";0!=a&&(b=new Date,b.setTime(b.getTime()+1E3*a),b="; expires="+b.toGMTString());document.cookie="channel="+escape("seo")+b+"; path=/"}self.location="https://pvp.qq.com/m/"}})();
+</script>
+</meta></meta></head>
+<body>
+<div class="header tganime-header-fix" id="header">
+<div class="header-inner">
+<h1><a class="logo pa" href="//pvp.qq.com/" onclick="PTTSendClick('headNav','logo','logo');" title="王者荣耀">王者荣耀</a></h1>
+<!--=========主导航==========-->
+<ul class="main-nav clearfix">
+<li>
+<a href="/web201605/herolist.shtml" onclick="PTTSendClick('link','data','游戏资料');" target="_blank" title="游戏资料">游戏资料<em>DATA</em></a>
+</li>
+<li>
+<a href="/raiders/" onclick="PTTSendClick('link','strategy','内容中心');" target="_blank" title="内容中心">内容中心<em>CONTENTS</em></a>
+</li>
+<li>
+<a href="https://kpl.qq.com/?ADTAG=pvp.index.nav.matchcenter" onclick="PTTSendClick('link','match','赛事中心');" target="_blank" title="赛事中心">赛事中心<em>MATCH</em></a>
+</li>
+<li>
+<a href="/cp/a20171023pvppc/" onclick="PTTSendClick('link','CULTURE','百态王者');" target="_blank" title="百态王者">百态王者<em>CULTURE</em></a>
+</li>
+<li>
+<a href="javascript:void(0)" onclick="PTTSendClick('link','Community','社区互动');" title="社区互动">社区互动<em>COMMUNITY</em></a>
+</li>
+<li>
+<a href="javascript:void(0)" onclick="PTTSendClick('link','player','玩家支持');" title="玩家支持">玩家支持<em>PLAYER</em></a>
+</li>
+<li>
+<a href="javascript:void(0)" onclick="PTTSendClick('link','ipnewgame','IP新游');" title="IP新游">IP新游<em>NEW GAMES</em></a>
+</li>
+</ul>
+</div>
+<!--=====二级导航=====-->
+<div class="sub-nav" id="J_subNav" style="visibility: hidden;">
+<ul class="sub-nav-inner">
+<li class="down-nav">
+<a href="/cp/a20170829bbgxsm/index.html" onclick="PTTSendClick('link','version','版本介绍');" target="_blank" title="版本介绍">版本介绍</a>
+<a href="/web201605/introduce.shtml" onclick="PTTSendClick('link','gameinfomation','游戏介绍');" target="_blank" title="游戏介绍">游戏介绍</a>
+<a href="/web201605/herolist.shtml" onclick="PTTSendClick('link','hero','英雄资料');" target="_blank" title="英雄资料">英雄资料</a>
+<a href="/coming/v2/" onclick="PTTSendClick('link','data_coming','爆料站');" target="_blank" title="爆料站"><i class="icon-hot"></i>爆料站</a>
+<a href="/ip/index.html?adtag=pvp.pc" onclick="PTTSendClick('link','data_story','世界观体验站');" target="_blank" title="世界观体验站"><i class="icon-fans"></i>世界观体验站</a>
+<a href="/web201605/wallpaper.shtml" onclick="PTTSendClick('link','wallpaper','游戏壁纸');" target="_blank" title="游戏壁纸">游戏壁纸</a>
+</li>
+<li class="down-nav">
+<a href="/raiders/" onclick="PTTSendClick('link','strategy_center','攻略中心');" target="_blank" title="攻略中心">攻略中心</a>
+<a href="/sucai/" onclick="PTTSendClick('link','strategy_sucai','开放素材库');" target="_blank" title="开放素材库">开放素材库</a>
+<a href="https://yyds.qq.com/creation" onclick="PTTSendClick('link','creation','内容共创平台');" target="_blank" title="内容共创平台"><i class="icon-fans"></i>内容共创平台</a>
+</li>
+<li class="down-nav">
+<a href="/match/kpl/kingproleague/index.html" onclick="PTTSendClick('link','match_KPL','KPL');" target="_blank" title="KPL职业联赛"><i class="icon-hot"></i>KPL</a>
+<a href="/cp/kic2022/index.html" onclick="PTTSendClick('link','match_worldcup','世界冠军杯');" target="_blank" title="世界冠军杯"><i class="icon-hot"></i>世界冠军杯</a>
+<a href="/match/WCC/KCC2021S2/index.html" onclick="PTTSendClick('link','match_kcc','挑战者杯');" target="_blank" title="挑战者杯"><i class="icon-fans"></i>挑战者杯</a>
+<a href="/cp/a20220328qgds/index.shtml" onclick="PTTSendClick('link','match_city','全国大赛');" target="_blank" title="全国大赛"><i class="icon-hot"></i>全国大赛</a>
+<a href="/match/KWO/index.html" onclick="PTTSendClick('link','match_kwo','女子公开赛');" target="_blank" title="女子公开赛">女子公开赛</a>
+<a href="/match/kgl/index.html" onclick="PTTSendClick('link','match_Kjia','K甲联赛');" target="_blank" title="K甲联赛">K甲联赛</a>
+<a href="/cp/a20220315open/index.shtml" onclick="PTTSendClick('link','match_gaoxiao','王者高校联赛');" target="_blank" title="王者高校联赛">高校联赛</a>
+<a href="/saibao/index.shtml" onclick="PTTSendClick('link','match_saibao','saibao');" target="_blank" title="王者赛宝"><i class="icon-fans"></i>王者赛宝</a>
+<a href="/matchdata/index.html" onclick="PTTSendClick('link','match_datamore','赛事数据');" target="_blank" title="赛事数据"><i class="icon-fans"></i>赛事数据</a>
+</li>
+<li class="down-nav">
+<a href="/memory/index.html" onclick="PTTSendClick('link','culture','荣耀·传承');" target="_blank" title="荣耀·传承">荣耀·传承</a>
+<a href="/history/" onclick="PTTSendClick('link','history','王者文化站');" target="_blank" title="王者文化站">王者文化站</a>
+<a href="/wonder/" onclick="PTTSendClick('link','wonder','万千世界');" target="_blank" title="万千世界">万千世界</a>
+<a href="/cp/a20190102starlight/index.html" onclick="PTTSendClick('link','star','星光殿堂');" target="_blank" title="星光殿堂">星光殿堂</a>
+<a href="/cp/a20210427ipgzzt/" onclick="PTTSendClick('link','ip','IP共创计划');" target="_blank" title="IP共创计划"><i class="icon-fans"></i>IP共创计划</a>
+<a href="//igame.qq.com/newcss/pvp/privilegePC/index.html" onclick="PTTSendClick('link','wifi','商户特权');" target="_blank" title="商户特权">商户特权</a>
+<a href="https://wangzhe.recogame.com/wangzhe.html" onclick="PTTSendClick('link','wangka','龙翼王者卡');" target="_blank" title="龙翼王者卡"><i class="icon-fans"></i>龙翼王者卡</a>
+</li>
+<li class="down-nav">
+<a href="//pvp.qq.com/hdy/p1/index.html" onclick="PTTSendClick('link','creative_community','创意互动营');" title="创意互动营"><i class="icon-hot"></i>创意互动营</a>
+<a href="javascript:void(0)" onclick="TGDialogS('zhushou');PTTSendClick('link','Community_tools','王者营地');" title="王者营地"><i class="icon-hot"></i>王者营地</a>
+<a href="javascript:void(0)" onclick="TGDialogS('weiquan');PTTSendClick('link','Community_wx','微信圈子');" title="微信圈子">微信圈子</a>
+<a href="//weibo.com/heromoba" onclick="PTTSendClick('link','Community_wb','官方微博');" target="_blank" title="官方微博">官方微博</a>
+<a href="javascript:void(0)" onclick="TGDialogS('weixin');PTTSendClick('link','Community_wxgzh','微信公众号');" title="微信公众号">微信公众号</a>
+<a href="javascript:void(0)" onclick="TGDialogS('qq');PTTSendClick('link','Community_qqdyh','手Q订阅号');" title="手Q订阅号">手Q订阅号</a>
+</li>
+<li class="down-nav">
+<a href="https://game.qq.com/act/a20210705protect/index.html" onclick="PTTSendClick('link','player_addict','腾讯游戏防沉迷');" target="_blank" title="腾讯游戏防沉迷">腾讯游戏防沉迷</a>
+<a href="https://jiazhang.qq.com/jz/home.html" onclick="PTTSendClick('link','player_watch','成长守护平台');" target="_blank" title="成长守护平台"><i class="icon-guard"></i>成长守护平台</a>
+<a href="/cp/a20190909talk/index.html" onclick="PTTSendClick('link','player_drj','对局环境情报站');" target="_blank" title="对局环境情报站">对局环境情报站</a>
+<a href="javascript:void(0)" onclick="TGDialogS('kefu');PTTSendClick('link','player_kf','客服专区');" title="客服专区">客服专区</a>
+<a href="/webplat/info/news_version3/15592/24091/24092/24095/m15241/201508/370256.shtml" onclick="PTTSendClick('link','player_feedback','礼包兑换');" target="_blank" title="礼包兑换">礼包兑换</a>
+<a href="https://tool.helper.qq.com/v3/wzry/official_website/index.html" onclick="PTTSendClick('link','player_service','自助服务');" target="_blank" title="自助服务">自助服务</a>
+</li>
+<li class="down-nav">
+<a href="https://world.qq.com/" onclick="PTTSendClick('link','shijie','世界');" target="_blank" title="世界"><i class="icon-fans"></i>王者荣耀·世界</a>
+<a href="https://poxiao.qq.com?ADTAG=pvp.nav.hokpc" onclick="PTTSendClick('link','poxiao','破晓');" target="_blank" title="破晓"><i class="icon-fans"></i>代号:破晓</a>
+<a href="https://pvp.qq.com/web201605/newsDetail.shtml?G_Biz=18&amp;tid=488378" onclick="PTTSendClick('link','qicheng','启程');" target="_blank" title="启程"><i class="icon-fans"></i>代号:启程</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="wrapper">
+<div class="kv-bg-container">
+<div class="kv-bg" style="background-image:url(//ossweb-img.qq.com/upload/webplat/info/yxzj/20230323/24388542544116.jpg);"></div>
+<a class="kv_link" href="https://pvp.qq.com/coming/v2/skins/0325-fswxlt.shtml?ADTAG=pvp.skin.pcgw" onclick="PTTSendClick('btn','topkv','进入专题');" target="_blank" title="查看详情">查看详情</a>
+</div>
+<!-- <canvas id="kv-canvas"></canvas> -->
+<!--==================mainer=======================-->
+<div class="main">
+<div class="main_top" exposure-tag="main_news,首屏新闻资讯">
+<div class="rotate fl pr" id="rotate">
+<!-- <ul id="promoInner" class="promo-list">正在努力加载中...</ul>
+				<div id="promoTrigger" class="rbox"></div> -->
+<div class="ggBox" id="ggBox"></div>
+</div>
+<div class="news_center fl">
+<div class="newsTab tganime-slide-slidein" id="newsTab">
+<ul class="tab-hd clearfix tganime-tab-underline news-tab-underline">
+<li><a href="javascript:void(0)" onmouseover="PTTSendClick('news','hot','热门');" title="热门">热门</a></li>
+<li><a href="javascript:void(0)" onmouseover="PTTSendClick('news','news','新闻');" title="新闻">新闻</a></li>
+<li><a href="javascript:void(0)" onmouseover="PTTSendClick('news','notice','公告');" title="公告">公告</a></li>
+<li><a href="javascript:void(0)" onmouseover="PTTSendClick('news','event','活动');" title="活动">活动</a></li>
+<li><a href="javascript:void(0)" onmouseover="PTTSendClick('news','match','赛事');" title="赛事">赛事</a></li>
+</ul>
+<a class="tab_more" href="/web201706/newsindex.shtml" onclick="PTTSendClick('news','more','更多');" target="_blank" title="更多">...</a>
+<div class="news-con" id="newsContent">
+<div class="tganime-slide-list news-slide-list">
+<ul class="news-list news-list0" data-channelid="1760" data-tagid="hot" id="newsList1">
+</ul>
+<ul class="news-list news-list0" data-channelid="1761" data-tagid="655" id="newsList2">
+</ul>
+<ul class="news-list news-list0" data-channelid="1762" data-tagid="656" id="newsList3">
+</ul>
+<ul class="news-list news-list0" data-channelid="1763" data-tagid="1139" id="newsList4">
+</ul>
+<ul class="news-list news-list0" data-channelid="1764" data-tagid="658" id="newsList5">
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="download_pannel fl">
+<a class="download_btn" href="javascript:;" onclick="TGDialogS('download');PTTSendClick('btn','download','下载游戏');"><span id="download-btn-ani"></span></a>
+<!-- <a href="javascript:;" onclick="TGDialogS('download');PTTSendClick('btn','download','下载游戏');" class="download-btn"><span id="download-btn-ani"></span></a> -->
+<a class="guard_btn" href="//pvp.qq.com/cp/a20190909talk/index.html" onclick="PTTSendClick('btn','guard','狄仁杰护卫站');" target="_blank"></a>
+<a class="tiyan_btn" href="//pvp.qq.com/cp/a20161115tyf/index.shtml" onclick="PTTSendClick('btn','experience','体验专区');" target="_blank"></a>
+</div>
+<div class="shiling" id="shiling"></div>
+<a class="fanchenmi" href="https://game.qq.com/act/a20210705protect/index.html" target="_blank"></a>
+</div>
+<div class="quick_entrance" exposure-tag="quick_entrance,快速入口">
+<a class="tganime-image-hover" href="/webplat/info/news_version3/15592/29030/29082/29156/m11740/201705/588204.shtml" onclick="PTTSendClick('quickLink','item1','item1');" target="_blank" title="王者营地"><img alt="王者营地" src="//ossweb-img.qq.com/upload/webplat/info/yxzj/20181210/86638782789061.jpg"/></a>
+<a class="tganime-image-hover" href="/webplat/info/news_version3/15592/29030/29082/29156/m11740/201705/588203.shtml" onclick="PTTSendClick('quickLink','item2','item2');" target="_blank" title="王者文化站"><img alt="王者文化站" src="//ossweb-img.qq.com/upload/webplat/info/yxzj/20210113/239381533097800.png"/></a>
+<a class="tganime-image-hover" href="/webplat/info/news_version3/15592/29030/29082/29156/m11740/201705/588200.shtml" onclick="PTTSendClick('quickLink','item3','item3');" target="_blank" title="爆料站入口"><img alt="爆料站入口" src="//ossweb-img.qq.com/upload/webplat/info/yxzj/20230323/58571649934976.jpg"/></a>
+<a class="tganime-image-hover" href="/webplat/info/news_version3/15592/29030/29082/29156/m11740/201705/588035.shtml" onclick="PTTSendClick('quickLink','item4','item4');" target="_blank" title="赛事专区"><img alt="赛事专区" src="//ossweb-img.qq.com/upload/webplat/info/yxzj/20221121/931781417452689.png"/></a>
+</div>
+<div class="clearfix main_item">
+<div class="strategy_center fl" exposure-tag="content_center,内容中心">
+<div class="item_header">
+<h3 class="item_title">内容中心</h3>
+<a class="more_btn" href="/raiders/" onclick="PTTSendClick('more','more-strategy','攻略中心-更多');" target="_blank">更多</a>
+</div>
+<div class="item_subnav clearfix">
+<a class="on" href="javascript:;" onmouseover="PTTSendClick('tab','raidersCenter-3','精品栏目');">精品栏目</a>
+<span class="split"></span>
+<a href="javascript:;" onmouseover="PTTSendClick('tab','raidersCenter-2','赛事精品');">赛事精品</a>
+<span class="split"></span>
+<a href="javascript:;" onmouseover="PTTSendClick('tab','raidersCenter-1','英雄攻略');">英雄攻略</a>
+</div>
+<div class="item_thirdnav tganime-fadein clearfix" id="item_thirdnav0">
+<div class="title">
+<a class="on" data-key="item2" data-moss="3491" href="javascript:;" onmouseover="PTTSendClick('tab','raidersCenter-3-1','最新');">最新</a>
+<a data-key="5090" data-moss="5010" href="javascript:;" onmouseover="PTTSendClick('tab','raidersCenter-3-2','峡谷大气层');">峡谷大气层</a>
+<a data-key="5090" data-moss="3543" href="javascript:;" onmouseover="PTTSendClick('tab','raidersCenter-3-2','马菠萝奇闻录');">马菠萝奇闻录</a>
+<a data-key="4780" data-moss="3560" href="javascript:;" onmouseover="PTTSendClick('tab','raidersCenter-3-8','狄仁杰封神榜');">狄仁杰封神榜</a>
+<a data-key="4780" data-moss="4925" href="javascript:;" onmouseover="PTTSendClick('tab','raidersCenter-3-8','游走基本法');">游走基本法</a>
+<a data-key="4780" data-moss="4942" href="javascript:;" onmouseover="PTTSendClick('tab','raidersCenter-3-8','野王修炼手册');">野王修炼手册</a>
+<a data-key="4780" data-moss="4959" href="javascript:;" onmouseover="PTTSendClick('tab','raidersCenter-3-8','法王的荣耀');">法王的荣耀</a>
+<!-- <a href="javascript:;" data-moss="4976" data-key="4780" onmouseover="PTTSendClick('tab','raidersCenter-3-8','射手之光');">射手之光</a> -->
+<!-- <a href="javascript:;" data-moss="4993" data-key="4780" onmouseover="PTTSendClick('tab','raidersCenter-3-8','边路通天指南');">边路通天指南</a> -->
+</div>
+</div>
+<div class="item_thirdnav tganime-fadein clearfix" id="item_thirdnav1">
+<div class="title">
+<!-- <a href="javascript:;" data-key="item1" onmouseover="PTTSendClick('tab','raidersCenter-2-1','最新');">最新</a> -->
+<a class="on" data-key="1639" data-moss="3508" href="javascript:;" onmouseover="PTTSendClick('tab','raidersCenter-2-2','王者炸麦了');">王者炸麦了</a>
+<a data-key="1852" data-moss="3525" href="javascript:;" onmouseover="PTTSendClick('tab','raidersCenter-2-3','荣耀大话王');">荣耀大话王</a>
+<a data-key="4784" data-moss="3542" href="javascript:;" onmouseover="PTTSendClick('tab','raidersCenter-2-4','KPL云电台');">KPL云电台</a>
+<a data-key="4785" data-moss="3559" href="javascript:;" onmouseover="PTTSendClick('tab','raidersCenter-2-5','超神快讯1+1');">超神快讯1+1</a>
+<!-- <a href="javascript:;"            data-moss="3576" data-key="4786" onmouseover="PTTSendClick('tab','raidersCenter-2-6','荣耀宅急送');">荣耀宅急送</a> -->
+<!-- <a href="javascript:;"            data-moss="3593" data-key="4787" onmouseover="PTTSendClick('tab','raidersCenter-2-7','王者好莱坞');">王者好莱坞</a> -->
+<a data-key="4775" data-moss="3610" href="javascript:;" onmouseover="PTTSendClick('tab','raidersCenter-2-8','绝对王者');">绝对王者</a>
+</div>
+</div>
+<div class="item_thirdnav tganime-fadein" id="item_thirdnav2">
+<div class="title">
+<span class="item_hero" id="item_hero">选择英雄</span>
+</div>
+<div class="dropdown clearfix">
+<div class="hero_type">
+<ul class="clearfix types-ms" id="herolist">
+<li data-id="0" data-type="0"><label>热门</label></li>
+<li data-id="675" data-type="3"><label>坦克</label></li>
+<li data-id="623" data-type="1"><label>战士</label></li>
+<li data-id="627" data-type="4"><label>刺客</label></li>
+<li data-id="619" data-type="2"><label>法师</label></li>
+<li data-id="641" data-type="5"><label>射手</label></li>
+<li data-id="676" data-type="6"><label>辅助</label></li>
+</ul>
+</div>
+<div class="hero_list">
+<ul class="herolist clearfix" id="hero_list">
+</ul>
+</div>
+</div>
+</div>
+<div class="item_content">
+<ul class="video_list clearfix tganime-fadein on" id="videoList"></ul>
+</div>
+</div>
+<div class="skin_center fl" exposure-tag="hero_skin,英雄皮肤">
+<div class="item_header">
+<h3 class="item_title">英雄/皮肤</h3>
+<a class="more_btn" href="//pvp.qq.com/web201605/herolist.shtml" onclick="PTTSendClick('more','more-hero-skin','英雄-皮肤-更多');" target="_blank">更多</a>
+</div>
+<div class="tganime-slide-slidein">
+<div class="item_subnav clearfix tganime-tab-underline skin-center-tab">
+<a class="on" href="javascript:;" onmouseover="PTTSendClick('side_strategy','hero','最新英雄');">最新英雄</a>
+<span class="split"></span>
+<a href="javascript:;" onmouseover="PTTSendClick('side_strategy','skin','最新皮肤');">最新皮肤</a>
+<span class="split"></span>
+<a href="javascript:;" onmouseover="PTTSendClick('side_strategy','gratis','周免英雄');">周免英雄</a>
+</div>
+<div class="slide-content">
+<div class="tganime-slide-list skin-center-list">
+<div class="item_content">
+<div class="new_hero">
+<a href="/webplat/info/news_version3/15592/29030/29082/29083/m11740/202301/928156.shtml" onclick="PTTSendClick('link','new-hero-main','最新英雄-大图');" target="_blank">
+<img class="lazy" data-original="//game.gtimg.cn/images/yxzj/img201606/freehero/horizontal/545.jpg" height="156" width="295"/>
+</a>
+<div class="new_hero_bottom">
+<p class="new_hero_name">新英雄：莱西奥</p>
+<p>上线时间：2023.01.03</p>
+</div>
+</div>
+<div class="hero_pic_list clearfix">
+<ul>
+<li>
+<a class="tganime-fadein-trigger" href="/webplat/info/news_version3/15592/29030/29082/29084/m11740/202301/928155.shtml" onclick="PTTSendClick('link','new-hero-item1','新英雄-列表-小图1');" target="_blank">
+<img class="lazy" data-original="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/544.jpg" height="173" width="68"/>
+<span class="hero_mask tganime-fadein-child"></span>
+<span class="hero_name tganime-fadein-child">赵怀真</span>
+</a>
+</li>
+<li>
+<a class="tganime-fadein-trigger" href="/webplat/info/news_version3/15592/29030/29082/29084/m11740/202212/926468.shtml" onclick="PTTSendClick('link','new-hero-item2','新英雄-列表-小图2');" target="_blank">
+<img class="lazy" data-original="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/521.jpg" height="173" width="68"/>
+<span class="hero_mask tganime-fadein-child"></span>
+<span class="hero_name tganime-fadein-child">海月</span>
+</a>
+</li>
+<li>
+<a class="tganime-fadein-trigger" href="/webplat/info/news_version3/15592/29030/29082/29084/m11740/202209/922524.shtml" onclick="PTTSendClick('link','new-hero-item3','新英雄-列表-小图3');" target="_blank">
+<img class="lazy" data-original="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/548.jpg" height="173" width="68"/>
+<span class="hero_mask tganime-fadein-child"></span>
+<span class="hero_name tganime-fadein-child">戈娅</span>
+</a>
+</li>
+<li>
+<a class="tganime-fadein-trigger" href="/webplat/info/news_version3/15592/29030/29082/29084/m11740/202206/917560.shtml" onclick="PTTSendClick('link','new-hero-item4','新英雄-列表-小图4');" target="_blank">
+<img class="lazy" data-original="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/534.jpg" height="173" width="68"/>
+<span class="hero_mask tganime-fadein-child"></span>
+<span class="hero_name tganime-fadein-child">桑启</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="item_content">
+<div class="new_hero">
+<a href="//pvp.qq.com/web201605/herodetail/536.shtml" onclick="PTTSendClick('link','hero-skin-main','英雄-皮肤-大图');" target="_blank">
+<img class="lazy" data-original="//game.gtimg.cn/images/yxzj/img201606/freehero/horizontal/536_skin.jpg" height="156" width="295"/>
+</a>
+<div class="new_hero_bottom">
+<p class="new_hero_name">新皮肤：浮生妄-夏洛特</p>
+<p>上线时间：2023.03.25</p>
+</div>
+</div>
+<div class="hero_pic_list clearfix">
+<ul>
+<li>
+<a class="tganime-fadein-trigger" href="//pvp.qq.com/web201605/herodetail/531.shtml" onclick="PTTSendClick('link','hero-skin-item1','英雄-皮肤-小图1');" target="_blank">
+<img class="lazy" data-original="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/531_skin.jpg" height="173" width="68"/>
+<span class="hero_mask tganime-fadein-child"></span>
+<span class="hero_name tganime-fadein-child">玫瑰异探-镜</span>
+</a>
+</li>
+<li>
+<a class="tganime-fadein-trigger" href="//pvp.qq.com/web201605/herodetail/182.shtml" onclick="PTTSendClick('link','hero-skin-item2','英雄-皮肤-小图2');" target="_blank">
+<img class="lazy" data-original="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/182_skin.jpg" height="173" width="68"/>
+<span class="hero_mask tganime-fadein-child"></span>
+<span class="hero_name tganime-fadein-child">画中仙-干将莫邪</span>
+</a>
+</li>
+<li>
+<a class="tganime-fadein-trigger" href="//pvp.qq.com/web201605/herodetail/154.shtml" onclick="PTTSendClick('link','hero-skin-item3','英雄-皮肤-小图3');" target="_blank">
+<img class="lazy" data-original="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/154_skin.jpg" height="173" width="68"/>
+<span class="hero_mask tganime-fadein-child"></span>
+<span class="hero_name tganime-fadein-child">燃星之曲-花木兰</span>
+</a>
+</li>
+<li>
+<a class="tganime-fadein-trigger" href="//pvp.qq.com/web201605/herodetail/174.shtml" onclick="PTTSendClick('link','hero-skin-item4','英雄-皮肤-小图4');" target="_blank">
+<img class="lazy" data-original="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/174_skin.jpg" height="173" width="68"/>
+<span class="hero_mask tganime-fadein-child"></span>
+<span class="hero_name tganime-fadein-child">无限倾心-虞姬</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="item_content">
+<div class="hero_pic_list clearfix">
+<ul>
+<li>
+<a class="tganime-fadein-trigger" href="/webplat/info/news_version3/15592/29030/29082/29088/m11740/201705/587409.shtml" onclick="PTTSendClick('link','side-freehero-item1','周免英雄-镜');" target="_blank">
+<img class="lazy" data-original="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/531.jpg" height="173" width="68"/>
+<span class="hero_mask tganime-fadein-child"></span>
+<span class="hero_name tganime-fadein-child">镜</span>
+</a>
+</li>
+<li>
+<a class="tganime-fadein-trigger" href="/webplat/info/news_version3/15592/29030/29082/29088/m11740/201705/587408.shtml" onclick="PTTSendClick('link','side-freehero-item2','周免英雄-澜');" target="_blank">
+<img class="lazy" data-original="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/528.jpg" height="173" width="68"/>
+<span class="hero_mask tganime-fadein-child"></span>
+<span class="hero_name tganime-fadein-child">澜</span>
+</a>
+</li>
+<li>
+<a class="tganime-fadein-trigger" href="/webplat/info/news_version3/15592/29030/29082/29088/m11740/201705/587407.shtml" onclick="PTTSendClick('link','side-freehero-item3','周免英雄-芈月');" target="_blank">
+<img class="lazy" data-original="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/121.jpg" height="173" width="68"/>
+<span class="hero_mask tganime-fadein-child"></span>
+<span class="hero_name tganime-fadein-child">芈月</span>
+</a>
+</li>
+<li>
+<a class="tganime-fadein-trigger" href="/webplat/info/news_version3/15592/29030/29082/29088/m11740/201705/587406.shtml" onclick="PTTSendClick('link','side-freehero-item4','周免英雄-桑启');" target="_blank">
+<img class="lazy" data-original="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/534.jpg" height="173" width="68"/>
+<span class="hero_mask tganime-fadein-child"></span>
+<span class="hero_name tganime-fadein-child">桑启</span>
+</a>
+</li>
+<li>
+<a class="tganime-fadein-trigger" href="/webplat/info/news_version3/15592/29030/29082/29088/m11740/201705/587404.shtml" onclick="PTTSendClick('link','side-freehero-item5','周免英雄-虞姬');" target="_blank">
+<img class="lazy" data-original="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/174.jpg" height="173" width="68"/>
+<span class="hero_mask tganime-fadein-child"></span>
+<span class="hero_name tganime-fadein-child">虞姬</span>
+</a>
+</li>
+<li>
+<a class="tganime-fadein-trigger" href="/webplat/info/news_version3/15592/29030/29082/29088/m11740/201705/587403.shtml" onclick="PTTSendClick('link','side-freehero-item6','周免英雄-廉颇');" target="_blank">
+<img class="lazy" data-original="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/105.jpg" height="173" width="68"/>
+<span class="hero_mask tganime-fadein-child"></span>
+<span class="hero_name tganime-fadein-child">廉颇</span>
+</a>
+</li>
+<li>
+<a class="tganime-fadein-trigger" href="/webplat/info/news_version3/15592/29030/29082/29088/m11740/201705/587157.shtml" onclick="PTTSendClick('link','side-freehero-item7','周免英雄-赵云');" target="_blank">
+<img class="lazy" data-original="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/107.jpg" height="173" width="68"/>
+<span class="hero_mask tganime-fadein-child"></span>
+<span class="hero_name tganime-fadein-child">赵云</span>
+</a>
+</li>
+<li>
+<a href="//pvp.qq.com/web201605/herolist.shtml" onclick="PTTSendClick('link','side-freehero-more','周免英雄-查看更多');"><img src="//game.gtimg.cn/images/yxzj/web201605/new/more_hero.jpg"/></a>
+</li>
+</ul>
+</div>
+<p><span class="icon_watch"></span>限免时间：<em class="date" id="freeDayBegin">xxxx-xx-xx</em>至<em class="date" id="freeDayEnd">xxxx-xx-xx</em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix main_item">
+<div class="match_center fl" exposure-tag="match_center,赛事中心">
+<div class="item_header">
+<h3 class="item_title">赛事中心</h3>
+<a class="more_btn" href="/match/center.shtml?ADTAG=pvp.index.matchcenter.more">更多</a>
+</div>
+<div class="item_subnav clearfix" id="VideoTypeId_751_index"></div>
+<div class="item_content tganime-fadein on" id="match-center">
+<div class="clearfix match_news">
+<div id="match_news_pic">
+<a class="match_news_pic" href=""><img height="260" src="about:blank" width="211"/></a>
+</div>
+<div class="match_news_list">
+<ul class="news-list match-list-l"></ul>
+</div>
+</div>
+<ul class="video_list match-list-r clearfix" id="matchVideoList"></ul>
+</div>
+</div>
+<div class="match_schedule" exposure-tag="match_schedule,赛程">
+<div class="item_header">
+<h3 class="item_title">KPL赛程</h3>
+<a class="buy_ticket" href="javascript:TGDialogS('ticket')" onclick="PTTSendClick('matchcenter','ticket','购票');">购票</a>
+<a class="more_btn" href="https://pvp.qq.com/match/kpl/kingproleague/index.html" onclick="PTTSendClick('matchcenter','more','更多');" target="_blank">更多</a>
+</div>
+<div class="item_subnav clearfix">
+<span class="col1">时间</span>
+<span class="col1">战队</span>
+<span class="col2"></span>
+<span class="col1">战队</span>
+</div>
+<div class="item_content" data-matchid="8" id="match_schedule_content">
+<ul></ul>
+</div>
+<div class="match_adver">
+<a href="https://pvp.qq.com/cp/kic2022/index.html" onclick="PTTSendClick('ad','side-match-ad1','赛程广告位1');" target="_blank">
+<img src="//game.gtimg.cn/images/yxzj/web201706/images/index/match_kic.jpg"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- gicp静态模板-页面不展示 -->
+<!-- 资讯 -->
+<div style="width:0;height:0;overflow: hidden;">
+<h2>热门</h2>
+<ul>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595848" target="_blank">星梦设计大赛优秀创意奖公布</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595830" target="_blank">蒙犽源梦皮肤设计大赛优秀创意奖、人气创意奖公布</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595829" target="_blank">蒙犽源梦皮肤设计大赛最终投票公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595637" target="_blank">3月23日全服不停机更新公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595516" target="_blank">街机神作！《合金弹头：觉醒》手游正式定档四月上线！</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595209" target="_blank">星梦大赛首轮投票启动，让你的大乔万里挑“一”！</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595137" target="_blank">3月16日全服不停机更新公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=594653" target="_blank">蒙犽皮肤设计大赛首轮投票开启公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=594599" target="_blank">星梦大赛全民海选开启，快来Pick你心中的大乔吧！</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=594522" target="_blank">3月9日全服不停机更新公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=594456" target="_blank">杭州亚运会倒计时200天+！首批电竞特许商品，来了！</a>
+</li>
+<!-- <li> -->
+<!-- -->
+<!-- <a target="_blank" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=594456" >杭州亚运会倒计时200天+！首批电竞特许商品，来了！</a> -->
+<!-- -->
+<!-- </li> -->
+</ul>
+<h2>新闻</h2>
+<ul>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595848" target="_blank">星梦设计大赛优秀创意奖公布</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595830" target="_blank">蒙犽源梦皮肤设计大赛优秀创意奖、人气创意奖公布</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595829" target="_blank">蒙犽源梦皮肤设计大赛最终投票公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595516" target="_blank">街机神作！《合金弹头：觉醒》手游正式定档四月上线！</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595209" target="_blank">星梦大赛首轮投票启动，让你的大乔万里挑“一”！</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=594653" target="_blank">蒙犽皮肤设计大赛首轮投票开启公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=594599" target="_blank">星梦大赛全民海选开启，快来Pick你心中的大乔吧！</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=594456" target="_blank">杭州亚运会倒计时200天+！首批电竞特许商品，来了！</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=594383" target="_blank">春日主题荣耀播报方案票选结果公布-互动小任务第21期</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=594180" target="_blank">蒙犽皮肤设计大赛创意赏析第十一期</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=594179" target="_blank">互动小任务第21期-春日荣耀播报票选活动开启！</a>
+</li>
+<!-- <li> -->
+<!-- -->
+<!-- <a target="_blank" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=594179" >互动小任务第21期-春日荣耀播报票选活动开启！</a> -->
+<!-- -->
+<!-- </li> -->
+</ul>
+<h2>公告</h2>
+<ul>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595757" target="_blank">3月24日体验服停机更新公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595806" target="_blank">3月24日全服不停机更新公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595651" target="_blank">3月24日体验服停机更新公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595646" target="_blank">3月23日英雄平衡性调整丨杨玉环、公孙离增强，雅典娜平衡</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595637" target="_blank">3月23日全服不停机更新公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595627" target="_blank">3月22日挂车行为专项违规处罚公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595628" target="_blank">3月22日外挂专项打击公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595537" target="_blank">3月21日体验服停机更新公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595422" target="_blank">3月19日体验服停机更新公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595338" target="_blank">3月17日体验服停机更新完成公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595330" target="_blank">3月18日全服不停机更新公告</a>
+</li>
+<!-- <li> -->
+<!-- -->
+<!-- <a target="_blank" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595330" >3月18日全服不停机更新公告</a> -->
+<!-- -->
+<!-- </li> -->
+</ul>
+<h2>活动</h2>
+<ul>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595809" target="_blank">快手APP《王者荣耀》官方账号购夏洛特限定新皮肤抽奖活动</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595848" target="_blank">星梦设计大赛优秀创意奖公布</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595830" target="_blank">蒙犽源梦皮肤设计大赛优秀创意奖、人气创意奖公布</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595829" target="_blank">蒙犽源梦皮肤设计大赛最终投票公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595807" target="_blank">【星福利日-送星会员经验】活动逐步开启公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595647" target="_blank">《古今物语》活动逐步开启公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595645" target="_blank">收集纸鸢送皮肤！夏洛特-浮生妄上线！</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595209" target="_blank">星梦大赛首轮投票启动，让你的大乔万里挑“一”！</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595179" target="_blank">“一元福利周”活动开启公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595183" target="_blank">【英雄演练-送排位保护卡】活动开启公告</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595138" target="_blank">参与活动送表情送语音！镜-玫瑰异探上线！</a>
+</li>
+<!-- <li> -->
+<!-- -->
+<!-- <a target="_blank" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=595138" >参与活动送表情送语音！镜-玫瑰异探上线！</a> -->
+<!-- -->
+<!-- </li> -->
+</ul>
+<h2>赛事</h2>
+<ul>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=592838" target="_blank">2023年K甲春季赛正式开赛，全员集结群雄逐鹿</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=592216" target="_blank">2023年王者荣耀甲级职业联赛（K甲）赛事规则</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=592188" target="_blank">23KPL春季赛常规赛第一轮门票将于2月3日12：00开售！</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=592148" target="_blank">2023年KPL王者荣耀职业联赛春季赛常规赛第一轮赛程</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=592114" target="_blank">王者荣耀职业联赛（KPL）2023春季赛赛事规则</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=589283" target="_blank">武汉eStarPro斩获第八冠 2022年王者荣耀世界冠军杯KIC在深圳圆满收官</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=589153" target="_blank">武汉eStarPro vs 佛山DRG.GK，谁将问鼎世冠总冠军？</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=588952" target="_blank">王者世冠半决赛落幕：星辰耀世，雄狮觉醒，谁能捧得凤凰杯？</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=588804" target="_blank">世冠半决赛 | 武汉eStarPro vs 重庆狼队：谁能率先晋级总决赛？</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=588724" target="_blank">2022王者世冠KIC半决赛即将开启，龙争虎斗，谁能成功进军总决赛？</a>
+</li>
+<li>
+<a href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=588234" target="_blank">世界冠军杯8强诞生！荣耀加冕，万豪旅享家倾心打造独家线下体验</a>
+</li>
+<!-- <li> -->
+<!-- -->
+<!-- <a target="_blank" href="https://pvp.qq.com/web201706/newsdetail.shtml?tid=588234" >世界冠军杯8强诞生！荣耀加冕，万豪旅享家倾心打造独家线下体验</a> -->
+<!-- -->
+<!-- </li> -->
+</ul>
+<!-- 内容中心 -->
+<h2>精品栏目</h2>
+<ul>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=499230" title="【百星王者带你飞】第82期：露娜精髓教学，三分钟学会无限连">
+<img height="110" src="//itea-cdn.qq.com/file/tgl/20190326/a3b9ea2b13e119799a1bba93dc9be42b.1553588057.793f6f3e49c7866937334b14d58c389a.686x385_58222.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">6645243</em><em class="fr">03-27</em></span>
+<span class="video-tit" title=" 【百星王者带你飞】第82期：露娜精髓教学，三分钟学会无限连"> 【百星王者带你飞】第82期：露娜精髓教学，三分钟学会无限连</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=496158" title="【百星王者带你飞】80期：破盾减速后期无敌，超远输出唯有伽罗">
+<img height="110" src="//itea-cdn.qq.com/file/tgl/20190312/a3b9ea2b13e119799a1bba93dc9be42b.1552392580.2249275f03969957f76cb679ebe330e9.686x385_87976.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">5562244</em><em class="fr">03-13</em></span>
+<span class="video-tit" title=" 【百星王者带你飞】80期：破盾减速后期无敌，超远输出唯有伽罗"> 【百星王者带你飞】80期：破盾减速后期无敌，超远输出唯有伽罗</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=494948" title="【百星王者带你飞】79期 真伤护盾线上续航，附魔跳大团战神器">
+<img height="110" src="//itea-cdn.qq.com/file/tgl/20190305/3c3805d4c6c799a36a93fabf34419f01.1551777418.930c97d5f594d57db0ddd82ff2a2d7dc.670x376_76339.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">3897018</em><em class="fr">03-05</em></span>
+<span class="video-tit" title=" 【百星王者带你飞】79期 真伤护盾线上续航，附魔跳大团战神器"> 【百星王者带你飞】79期 真伤护盾线上续航，附魔跳大团战神器</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=475955" title="【百星王者带你飞】72期：新英雄嫦娥快速上手指南">
+<img height="110" src="//itea-cdn.qq.com/file/tgl/20190115/d9f1d17a128e6a3a2c047678c6189817.1547556687.c6890cb9a2e7b975d8d4bba6e9054d9d.900x500_87144.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">15670031</em><em class="fr">01-16</em></span>
+<span class="video-tit" title=" 【百星王者带你飞】72期：新英雄嫦娥快速上手指南"> 【百星王者带你飞】72期：新英雄嫦娥快速上手指南</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=757453" title="鬼谷子：义无反顾为队友承受着伤害，但“痛(痛快)并快乐着”！">
+<img height="110" src="https://img.tgl.qq.com/cover/20210923/3e85fc9e53957da006f3c7b78d096653_1632407526.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">3724</em><em class="fr">09-23</em></span>
+<span class="video-tit" title=" 鬼谷子：义无反顾为队友承受着伤害，但“痛(痛快)并快乐着”！"> 鬼谷子：义无反顾为队友承受着伤害，但“痛(痛快)并快乐着”！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=754234" title="国服暴夫子  峡谷推塔大亨">
+<img height="110" src="https://img.tgl.qq.com/cover/20210908/118a6c7674e29d678f9ae0074d603078_1631109774.png" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">6678</em><em class="fr">09-08</em></span>
+<span class="video-tit" title=" 国服暴夫子  峡谷推塔大亨"> 国服暴夫子  峡谷推塔大亨</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=754232" title="劣势局老夫子 是如何1V9的">
+<img height="110" src="https://img.tgl.qq.com/cover/20210908/2085cc7695ce77873934520085e987ab_1631109424.png" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">6652</em><em class="fr">09-08</em></span>
+<span class="video-tit" title=" 劣势局老夫子 是如何1V9的"> 劣势局老夫子 是如何1V9的</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=629936" title="王者荣耀中出人意料的小细节！">
+<img height="110" src="//itea-cdn.qq.com/file/tgl/2020062719/f9cc3a78b7bc978a5aa341dba539a63b.1593257679.58a7efecc9697d91a471d68fa5753be8.230x140_17860.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">33954</em><em class="fr">06-27</em></span>
+<span class="video-tit" title=" 王者荣耀中出人意料的小细节！"> 王者荣耀中出人意料的小细节！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=599062" title="王者视角:李元芳化身峡谷大使，维护峡谷和平！">
+<img height="110" src="https://itea-cdn.qq.com/file/tgl/2020032014/6da9003b743b65f4c0ccd295cc484e57.1584686411.ef15216f7bce559821e7c47b3151811a.230x140_9011.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">26415</em><em class="fr">03-20</em></span>
+<span class="video-tit" title=" 王者视角:李元芳化身峡谷大使，维护峡谷和平！"> 王者视角:李元芳化身峡谷大使，维护峡谷和平！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=810888" title="【狄仁杰封神榜】第91期 冷枪难躲冷箭难防 快来调查子弹的真相">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/ab6c5ae6dc654c3c8aac2583d6bcdb36/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">38</em><em class="fr">06-20</em></span>
+<span class="video-tit" title=" 【狄仁杰封神榜】第91期 冷枪难躲冷箭难防 快来调查子弹的真相"> 【狄仁杰封神榜】第91期 冷枪难躲冷箭难防 快来调查子弹的真相</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=809864" title="【狄仁杰封神榜】第90期 锁定透视 守护峡谷草丛！">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/d1efcc8d3ef0afd4f4522118d46c179c/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">282767</em><em class="fr">06-12</em></span>
+<span class="video-tit" title=" 【狄仁杰封神榜】第90期 锁定透视 守护峡谷草丛！"> 【狄仁杰封神榜】第90期 锁定透视 守护峡谷草丛！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=808929" title="【狄仁杰封神榜】第89期 锁定透视 守护峡谷草丛！">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/298b55b64b149999f5884b92b2c9e884/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">197317</em><em class="fr">06-05</em></span>
+<span class="video-tit" title=" 【狄仁杰封神榜】第89期 锁定透视 守护峡谷草丛！"> 【狄仁杰封神榜】第89期 锁定透视 守护峡谷草丛！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=808357" title="【狄仁杰封神榜】第88期 无视野锁定 峡谷“爱你”科技版">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/44feb45d87e21019617396574508615c/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">207670</em><em class="fr">05-29</em></span>
+<span class="video-tit" title=" 【狄仁杰封神榜】第88期 无视野锁定 峡谷“爱你”科技版"> 【狄仁杰封神榜】第88期 无视野锁定 峡谷“爱你”科技版</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=807501" title="【狄仁杰封神榜】第87期 精准飞扇空气？黑科技已被锁定">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/4d58f13d81257b2fe5aa40d7c301b6c3/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">181723</em><em class="fr">05-22</em></span>
+<span class="video-tit" title=" 【狄仁杰封神榜】第87期 精准飞扇空气？黑科技已被锁定"> 【狄仁杰封神榜】第87期 精准飞扇空气？黑科技已被锁定</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=806540" title="【狄仁杰封神榜】第86期 开透视解说？队友大义灭亲极度舒适">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/7741e488e99a190f1e15f5d1de4d9364/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">11776</em><em class="fr">05-15</em></span>
+<span class="video-tit" title=" 【狄仁杰封神榜】第86期 开透视解说？队友大义灭亲极度舒适"> 【狄仁杰封神榜】第86期 开透视解说？队友大义灭亲极度舒适</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=804121" title="【狄仁杰封神榜】第85期 抓获草外狂徒 无视野乱杀疑点重重">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/39cc331e7de10712642ed0947c7250e9/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">195752</em><em class="fr">04-30</em></span>
+<span class="video-tit" title=" 【狄仁杰封神榜】第85期 抓获草外狂徒 无视野乱杀疑点重重"> 【狄仁杰封神榜】第85期 抓获草外狂徒 无视野乱杀疑点重重</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=802981" title="【狄仁杰封神榜】第84期 带着科技送外卖 隔壁典韦都馋哭了！">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/b334f67b641df6af692341fbde0f457b/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">239327</em><em class="fr">04-24</em></span>
+<span class="video-tit" title=" 【狄仁杰封神榜】第84期 带着科技送外卖 隔壁典韦都馋哭了！"> 【狄仁杰封神榜】第84期 带着科技送外卖 隔壁典韦都馋哭了！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=632185" title="【策见打】这就TM离谱，曹操居然是吸血鬼？">
+<img height="110" src="//itea-cdn.qq.com/file/tgl/2020070406/0a13ff6836d3b4a4d734956d20f6c092.1593815347.28de3059a7b8e6ba8571e0b71b7d77c2.230x140_47226.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">35038</em><em class="fr">07-04</em></span>
+<span class="video-tit" title=" 【策见打】这就TM离谱，曹操居然是吸血鬼？"> 【策见打】这就TM离谱，曹操居然是吸血鬼？</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=759841" title="玩手游网速不稳定，是什么原因">
+<img height="110" src="https://momentcon-1255653016.cos.ap-guangzhou.myqcloud.com/97029670/20001/21824474556959FF61DC343C99962DC0.png?imageView2/1/w/230/h/140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">12101</em><em class="fr">10-03</em></span>
+<span class="video-tit" title=" 玩手游网速不稳定，是什么原因"> 玩手游网速不稳定，是什么原因</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=692950" title="【整活吧小阿金】01：澜CG配音猛男版，BLUE坑惨澜朋友">
+<img height="110" src="https://img.tgl.qq.com/cover/20201231/2ea8fd5ab6c925d5221d3547fb971978_1609412233.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">2567329</em><em class="fr">12-31</em></span>
+<span class="video-tit" title=" 【整活吧小阿金】01：澜CG配音猛男版，BLUE坑惨澜朋友"> 【整活吧小阿金】01：澜CG配音猛男版，BLUE坑惨澜朋友</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=658966" title="【峡谷460】16《信条》入侵王者峡谷！达摩完美复制一诺行为">
+<img height="110" src="//puui.qpic.cn/vpic/0/s3152lc3s96.png/0" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">6135352</em><em class="fr">09-16</em></span>
+<span class="video-tit" title=" 【峡谷460】16《信条》入侵王者峡谷！达摩完美复制一诺行为"> 【峡谷460】16《信条》入侵王者峡谷！达摩完美复制一诺行为</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=654998" title="【峡谷460】15：无尽破军VS末世破晓！守约对决谁将获胜？">
+<img height="110" src="//itea-cdn.qq.com/file/tgl/2020090412/7e39f90815d0cbca3fcb1178fb9fa803.1599224062.a826283ab2f322c0806f9a7ba5598cde.1280x720_239742.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">6305336</em><em class="fr">09-10</em></span>
+<span class="video-tit" title=" 【峡谷460】15：无尽破军VS末世破晓！守约对决谁将获胜？"> 【峡谷460】15：无尽破军VS末世破晓！守约对决谁将获胜？</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=652783" title="【峡谷460】14：大仙惨遇王者小兵，峡谷惊现悬疑案件">
+<img height="110" src="//puui.qpic.cn/vpic/0/n31430eno2h.png/0" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">6414803</em><em class="fr">08-29</em></span>
+<span class="video-tit" title=" 【峡谷460】14：大仙惨遇王者小兵，峡谷惊现悬疑案件"> 【峡谷460】14：大仙惨遇王者小兵，峡谷惊现悬疑案件</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=649680" title="【峡谷460】13：Fly闪曜峡谷秀，大仙吃果反掉血？">
+<img height="110" src="//puui.qpic.cn/vpic/0/m3139iijb1j.png/0" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">6187563</em><em class="fr">08-21</em></span>
+<span class="video-tit" title=" 【峡谷460】13：Fly闪曜峡谷秀，大仙吃果反掉血？"> 【峡谷460】13：Fly闪曜峡谷秀，大仙吃果反掉血？</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=646976" title="【峡谷460】12：新晋野王阿古朵？梦泪惨遭人机吊打！">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/9b038bf7cdfe5bf8f4522517d58a5949/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">187287</em><em class="fr">08-14</em></span>
+<span class="video-tit" title=" 【峡谷460】12：新晋野王阿古朵？梦泪惨遭人机吊打！"> 【峡谷460】12：新晋野王阿古朵？梦泪惨遭人机吊打！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=644940" title="【峡谷460】11：峡谷上演无间道，一诺直呼内行">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/8f5241e1728b9b740b93eaca27a879b8/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">43730</em><em class="fr">08-07</em></span>
+<span class="video-tit" title=" 【峡谷460】11：峡谷上演无间道，一诺直呼内行"> 【峡谷460】11：峡谷上演无间道，一诺直呼内行</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=810887" title="【马菠萝奇闻录】第49期： 急！宫本学会了，阿通哪里领？！">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/743a9214e4243388c330eb1a3d30a450/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">42898</em><em class="fr">06-20</em></span>
+<span class="video-tit" title=" 【马菠萝奇闻录】第49期： 急！宫本学会了，阿通哪里领？！"> 【马菠萝奇闻录】第49期： 急！宫本学会了，阿通哪里领？！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=809865" title="【马菠萝奇闻录】第48期：职业和国服选手都在用的超神设置">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/3089aed6c40ddcfeba3fcd79cb9ac23f/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">30140</em><em class="fr">06-12</em></span>
+<span class="video-tit" title=" 【马菠萝奇闻录】第48期：职业和国服选手都在用的超神设置"> 【马菠萝奇闻录】第48期：职业和国服选手都在用的超神设置</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=808931" title="【马菠萝奇闻录】第47期：我也不想出形昭啊，可他是老六诶！">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/f5fa39040a51d05bdd7587afdc1b5ebc/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">23366</em><em class="fr">06-05</em></span>
+<span class="video-tit" title=" 【马菠萝奇闻录】第47期：我也不想出形昭啊，可他是老六诶！"> 【马菠萝奇闻录】第47期：我也不想出形昭啊，可他是老六诶！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=807502" title="【马菠萝奇闻录】第45期：英雄特性放大，他们原来还有不一样的玩法！">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/72c1c52f4c51d98beb334d0c9e6e5cbc/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">18766</em><em class="fr">05-22</em></span>
+<span class="video-tit" title=" 【马菠萝奇闻录】第45期：英雄特性放大，他们原来还有不一样的玩法！"> 【马菠萝奇闻录】第45期：英雄特性放大，他们原来还有不一样的玩法！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=806539" title="【马菠萝奇闻录44】：人形雷达，发育路大杀器李元芳">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/a7a96421375462440f037f539dd3edcb/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">9573</em><em class="fr">05-15</em></span>
+<span class="video-tit" title=" 【马菠萝奇闻录44】：人形雷达，发育路大杀器李元芳"> 【马菠萝奇闻录44】：人形雷达，发育路大杀器李元芳</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=804123" title="【马菠萝奇闻录】诸葛上手指南，一个大招贯穿整个峡谷">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/953a75981046e2abce79229ec098de30/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">30622</em><em class="fr">04-30</em></span>
+<span class="video-tit" title=" 【马菠萝奇闻录】诸葛上手指南，一个大招贯穿整个峡谷"> 【马菠萝奇闻录】诸葛上手指南，一个大招贯穿整个峡谷</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=802983" title="【马菠萝奇闻录】第42期：转职成功，峡谷新晋野王报道！">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/f021090a09e4e491c4385734b6c30603/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">34300</em><em class="fr">04-24</em></span>
+<span class="video-tit" title=" 【马菠萝奇闻录】第42期：转职成功，峡谷新晋野王报道！"> 【马菠萝奇闻录】第42期：转职成功，峡谷新晋野王报道！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=801682" title="【马菠萝奇闻录】第41期：新赛季赢在起跑线，3分钟掌握分路和视野调整">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/bf0c621e8b02b9ff5300e4a4667d88e3/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">49445</em><em class="fr">04-17</em></span>
+<span class="video-tit" title=" 【马菠萝奇闻录】第41期：新赛季赢在起跑线，3分钟掌握分路和视野调整"> 【马菠萝奇闻录】第41期：新赛季赢在起跑线，3分钟掌握分路和视野调整</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+</ul>
+<h2>赛事精品</h2>
+<ul>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=839634" title="【王者炸麦了】lovecd专治赛前飘，狼队林无规则bp杀四方">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/efdd227c9a721ee6f2632f1e14b9f4e2/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">0</em><em class="fr">03-24</em></span>
+<span class="video-tit" title=" 【王者炸麦了】lovecd专治赛前飘，狼队林无规则bp杀四方"> 【王者炸麦了】lovecd专治赛前飘，狼队林无规则bp杀四方</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=838487" title="【王者炸麦了】数学鬼才易峥在线算数，风箫孙尚香所向披靡伪五杀">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/2d374fde76e7ddb0eb7b3ef612030979/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">1161</em><em class="fr">03-18</em></span>
+<span class="video-tit" title=" 【王者炸麦了】数学鬼才易峥在线算数，风箫孙尚香所向披靡伪五杀"> 【王者炸麦了】数学鬼才易峥在线算数，风箫孙尚香所向披靡伪五杀</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=837483" title="【王者炸麦了】武汉ES强势晋级，济南RW侠“第一黑马”出重围">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/d894e6bc8f06575ff7b75c2fa84593ec/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">1567</em><em class="fr">03-13</em></span>
+<span class="video-tit" title=" 【王者炸麦了】武汉ES强势晋级，济南RW侠“第一黑马”出重围"> 【王者炸麦了】武汉ES强势晋级，济南RW侠“第一黑马”出重围</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=836392" title="【王者炸麦了】旋转小子“廖”孙离逆风翻盘，广佛再交战让二追三">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/7197c155fd67b3ca2d24b3c49b69453b/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">1283</em><em class="fr">03-03</em></span>
+<span class="video-tit" title=" 【王者炸麦了】旋转小子“廖”孙离逆风翻盘，广佛再交战让二追三"> 【王者炸麦了】旋转小子“廖”孙离逆风翻盘，广佛再交战让二追三</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=835822" title="【王者炸麦了】一诺赛前”大放厥词“，无畏血C大杀四方">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/14d45e1e88c75c9a628db251c4f0b27c/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">4989</em><em class="fr">02-24</em></span>
+<span class="video-tit" title=" 【王者炸麦了】一诺赛前”大放厥词“，无畏血C大杀四方"> 【王者炸麦了】一诺赛前”大放厥词“，无畏血C大杀四方</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=835078" title="【王者炸麦了】21级孙尚香大展封神之力，生而自信暖阳秀麻全场">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/1c63bd2595fb2e364ba5bb322fbc5208/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">2100</em><em class="fr">02-17</em></span>
+<span class="video-tit" title=" 【王者炸麦了】21级孙尚香大展封神之力，生而自信暖阳秀麻全场"> 【王者炸麦了】21级孙尚香大展封神之力，生而自信暖阳秀麻全场</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=827284" title="【王者炸麦了】巅峰相见一战定乾坤 武汉eStar热血捍荣光">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/9fa08552b59ec9573f310e2aca1582ec/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">142940</em><em class="fr">11-09</em></span>
+<span class="video-tit" title=" 【王者炸麦了】巅峰相见一战定乾坤 武汉eStar热血捍荣光"> 【王者炸麦了】巅峰相见一战定乾坤 武汉eStar热血捍荣光</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=826669" title="【王者炸麦了】女子公开赛收官 Nova战队“女王”加冕">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/6e75fbd788b1efba642f6e76cc7c8113/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">7877</em><em class="fr">11-03</em></span>
+<span class="video-tit" title=" 【王者炸麦了】女子公开赛收官 Nova战队“女王”加冕"> 【王者炸麦了】女子公开赛收官 Nova战队“女王”加冕</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=838995" title="【荣耀大话王Ⅺ】无畏为保住粉丝发际线选择蹦极">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/82038c6238dff36eb77c6ea555905565/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">0</em><em class="fr">03-20</em></span>
+<span class="video-tit" title=" 【荣耀大话王Ⅺ】无畏为保住粉丝发际线选择蹦极"> 【荣耀大话王Ⅺ】无畏为保住粉丝发际线选择蹦极</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=837837" title="【荣耀大话王Ⅺ】一诺传授粉丝唱歌技巧 苏沫冰尘开展知识大PK">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/09c28930198835aef4e4846c91192a10/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">984</em><em class="fr">03-13</em></span>
+<span class="video-tit" title=" 【荣耀大话王Ⅺ】一诺传授粉丝唱歌技巧 苏沫冰尘开展知识大PK"> 【荣耀大话王Ⅺ】一诺传授粉丝唱歌技巧 苏沫冰尘开展知识大PK</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=836748" title="【荣耀大话王Ⅺ】妖刀搞笑模仿Fly嗨歌 无畏星痕奶油机现场">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/949cfa32fc4d26e5d2f54bac12ef0193/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">1166</em><em class="fr">03-06</em></span>
+<span class="video-tit" title=" 【荣耀大话王Ⅺ】妖刀搞笑模仿Fly嗨歌 无畏星痕奶油机现场"> 【荣耀大话王Ⅺ】妖刀搞笑模仿Fly嗨歌 无畏星痕奶油机现场</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=836091" title="【荣耀大话王Ⅺ】花海易峥无铭展开周杰伦歌曲PK">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/8340f0f46941dc6dde572faf2d5ce6c4/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">1414</em><em class="fr">02-28</em></span>
+<span class="video-tit" title=" 【荣耀大话王Ⅺ】花海易峥无铭展开周杰伦歌曲PK"> 【荣耀大话王Ⅺ】花海易峥无铭展开周杰伦歌曲PK</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=835385" title="【荣耀大话王Ⅺ】小义讲述弹幕“云养狗” 清清九尾阿豆禁言挑战">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/839569594161b1b2411ee24447111af1/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">1268</em><em class="fr">02-21</em></span>
+<span class="video-tit" title=" 【荣耀大话王Ⅺ】小义讲述弹幕“云养狗” 清清九尾阿豆禁言挑战"> 【荣耀大话王Ⅺ】小义讲述弹幕“云养狗” 清清九尾阿豆禁言挑战</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=834828" title="【荣耀大话王Ⅺ】荣耀热评区回归花海回答犀利提问">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/85d2501470f2e6ba8b4c36ddfbf0f179/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">1434</em><em class="fr">02-14</em></span>
+<span class="video-tit" title=" 【荣耀大话王Ⅺ】荣耀热评区回归花海回答犀利提问"> 【荣耀大话王Ⅺ】荣耀热评区回归花海回答犀利提问</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=820874" title="【荣耀大话王X】重庆狼队狠话花絮放送 花海易峥互相重拳出击">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/039fe7509cd3499216199a73c769c94f/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">5236</em><em class="fr">09-07</em></span>
+<span class="video-tit" title=" 【荣耀大话王X】重庆狼队狠话花絮放送 花海易峥互相重拳出击"> 【荣耀大话王X】重庆狼队狠话花絮放送 花海易峥互相重拳出击</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=820048" title="【荣耀大话王X】柠栀喊Fly久诚请吃饭 暖阳花卷星宇禁言挑战">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/dcbc0c49ac3a6af11250336eef0bce4f/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">11319</em><em class="fr">08-30</em></span>
+<span class="video-tit" title=" 【荣耀大话王X】柠栀喊Fly久诚请吃饭 暖阳花卷星宇禁言挑战"> 【荣耀大话王X】柠栀喊Fly久诚请吃饭 暖阳花卷星宇禁言挑战</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=805160" title="【绝对王者】重庆狼队：我最想要的冠军，永远是下一个">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/de6da89f7d6fae7df5280a0653594b0c/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">180942</em><em class="fr">05-07</em></span>
+<span class="video-tit" title=" 【绝对王者】重庆狼队：我最想要的冠军，永远是下一个"> 【绝对王者】重庆狼队：我最想要的冠军，永远是下一个</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=805155" title="【绝对王者】武汉eStarPro ：花又开好了">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/d22ea657f7625ea6727332ac8c68bbfa/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">188346</em><em class="fr">05-07</em></span>
+<span class="video-tit" title=" 【绝对王者】武汉eStarPro ：花又开好了"> 【绝对王者】武汉eStarPro ：花又开好了</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=804183" title="【绝对王者】佛山GK：时间沉淀过往，人生没有弯路">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/12949b46715c25a593e1315ce9d548e5/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">5137</em><em class="fr">05-01</em></span>
+<span class="video-tit" title=" 【绝对王者】佛山GK：时间沉淀过往，人生没有弯路"> 【绝对王者】佛山GK：时间沉淀过往，人生没有弯路</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=803951" title="【绝对王者】XYG：纯粹的力量">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/7a42a7fa5bb2e2da9b6d1a327291c678/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">59001</em><em class="fr">04-29</em></span>
+<span class="video-tit" title=" 【绝对王者】XYG：纯粹的力量"> 【绝对王者】XYG：纯粹的力量</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=803575" title="【绝对王者】西安WE：你会如何回忆“我”">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/0390d80a0e6158ac52e17fa4697884a8/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">15408</em><em class="fr">04-28</em></span>
+<span class="video-tit" title=" 【绝对王者】西安WE：你会如何回忆“我”"> 【绝对王者】西安WE：你会如何回忆“我”</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=803377" title="【绝对王者】北京WB：纸条里的秘密">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/921b443c68d083e82922a1beeaa38c4d/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">16551</em><em class="fr">04-26</em></span>
+<span class="video-tit" title=" 【绝对王者】北京WB：纸条里的秘密"> 【绝对王者】北京WB：纸条里的秘密</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=803073" title="【绝对王者】济南RW侠：平凡我们，都是自己的英雄">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/b104c7a9ebd906226e86e2643c45d25c/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">17293</em><em class="fr">04-24</em></span>
+<span class="video-tit" title=" 【绝对王者】济南RW侠：平凡我们，都是自己的英雄"> 【绝对王者】济南RW侠：平凡我们，都是自己的英雄</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=802640" title="【绝对王者】深圳DYG：晨光熹微，朝阳仍在路上">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/bbb60ee988ca766d94ade133d690140c/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">11907</em><em class="fr">04-22</em></span>
+<span class="video-tit" title=" 【绝对王者】深圳DYG：晨光熹微，朝阳仍在路上"> 【绝对王者】深圳DYG：晨光熹微，朝阳仍在路上</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=764624" title="2021KPL秋季赛杭州LGD大鹅 vs 苏州KSG">
+<img height="110" src="https://img.tgl.qq.com/cover/20211022/b2ffb68f87dc2f0a29fcf310d60fd786_1634910489.png" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">3747</em><em class="fr">10-22</em></span>
+<span class="video-tit" title=" 2021KPL秋季赛杭州LGD大鹅 vs 苏州KSG"> 2021KPL秋季赛杭州LGD大鹅 vs 苏州KSG</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=762690" title="2021KPL秋季赛杭州LGD大鹅 vs 北京WB">
+<img height="110" src="https://img.tgl.qq.com/cover/20211015/3ea399d1b285f970b57cf04f06925735_1634305388.png" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">1829</em><em class="fr">10-15</em></span>
+<span class="video-tit" title=" 2021KPL秋季赛杭州LGD大鹅 vs 北京WB"> 2021KPL秋季赛杭州LGD大鹅 vs 北京WB</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=762449" title="2021KPL秋季赛长沙TES.A vs 西安WE">
+<img height="110" src="https://img.tgl.qq.com/cover/20211014/7e4b129cff00c86e3d18e1c93db334c2_1634218187.png" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">720</em><em class="fr">10-14</em></span>
+<span class="video-tit" title=" 2021KPL秋季赛长沙TES.A vs 西安WE"> 2021KPL秋季赛长沙TES.A vs 西安WE</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=761198" title="2021KPL秋季赛重庆狼队 vs 长沙TES.A">
+<img height="110" src="https://img.tgl.qq.com/cover/20211009/7051b487e53c3302ea61ac43efb8e098_1633760687.png" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">2608</em><em class="fr">10-09</em></span>
+<span class="video-tit" title=" 2021KPL秋季赛重庆狼队 vs 长沙TES.A"> 2021KPL秋季赛重庆狼队 vs 长沙TES.A</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=759927" title="2021KPL秋季赛深圳DYG vs MTG">
+<img height="110" src="https://img.tgl.qq.com/cover/20211003/a89da12a41a653ad0acc0a04eb64c496_1633266894.png" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">993</em><em class="fr">10-03</em></span>
+<span class="video-tit" title=" 2021KPL秋季赛深圳DYG vs MTG"> 2021KPL秋季赛深圳DYG vs MTG</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=759693" title="2021KPL秋季赛西安WE vs 北京WB">
+<img height="110" src="https://img.tgl.qq.com/cover/20211002/29a5d11fec8c7e8115fb1d74bac3aadc_1633175682.png" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">990</em><em class="fr">10-02</em></span>
+<span class="video-tit" title=" 2021KPL秋季赛西安WE vs 北京WB"> 2021KPL秋季赛西安WE vs 北京WB</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=759469" title="天云噩梦惊醒，没想你是这样的澜朋友">
+<img height="110" src="https://momentcon-1255653016.cos.ap-guangzhou.myqcloud.com/225772131/20001/2336ABC1F9757F3752390B7B7A47A117.png?imageView2/1/w/230/h/140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">5343</em><em class="fr">10-01</em></span>
+<span class="video-tit" title=" 天云噩梦惊醒，没想你是这样的澜朋友"> 天云噩梦惊醒，没想你是这样的澜朋友</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=759446" title="2021KPL秋季赛南京Hero久竞 vs 长沙TES.A">
+<img height="110" src="https://img.tgl.qq.com/cover/20211001/018c38f8a3f833742accf3587e4c524d_1633095487.png" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">871</em><em class="fr">10-01</em></span>
+<span class="video-tit" title=" 2021KPL秋季赛南京Hero久竞 vs 长沙TES.A"> 2021KPL秋季赛南京Hero久竞 vs 长沙TES.A</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=689466" title="【超神快讯1+1】第二季第14期 47猪哼重庆之游，如梦如幻，冲向巅峰">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/9dff681ae20910a6851eba194e56c1d5/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">9095</em><em class="fr">12-19</em></span>
+<span class="video-tit" title=" 【超神快讯1+1】第二季第14期 47猪哼重庆之游，如梦如幻，冲向巅峰"> 【超神快讯1+1】第二季第14期 47猪哼重庆之游，如梦如幻，冲向巅峰</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=686923" title="【超神快讯1+1】第二季第13期 47猪哼剧透诺言首秀？两人真情吐露辅助人心声！">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/e17ac938b055b799af1fff85fca9ab8a/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">111656</em><em class="fr">12-10</em></span>
+<span class="video-tit" title=" 【超神快讯1+1】第二季第13期 47猪哼剧透诺言首秀？两人真情吐露辅助人心声！"> 【超神快讯1+1】第二季第13期 47猪哼剧透诺言首秀？两人真情吐露辅助人心声！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=682316" title="【超神快讯1+1】第二季11期 竟有队伍为成都AG失败落泪 英凯47狂立flag">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/4fd873d116a2832291ef5267c9d35da8/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">3645</em><em class="fr">11-26</em></span>
+<span class="video-tit" title=" 【超神快讯1+1】第二季11期 竟有队伍为成都AG失败落泪 英凯47狂立flag"> 【超神快讯1+1】第二季11期 竟有队伍为成都AG失败落泪 英凯47狂立flag</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=679895" title="【超神快讯1+1】第二季第十期 英凯rap虽迟但到，KPL季后赛名额究竟花落谁家">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/f04ca4fb1a64aef3d0b2bf837540640f/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">25207</em><em class="fr">11-19</em></span>
+<span class="video-tit" title=" 【超神快讯1+1】第二季第十期 英凯rap虽迟但到，KPL季后赛名额究竟花落谁家"> 【超神快讯1+1】第二季第十期 英凯rap虽迟但到，KPL季后赛名额究竟花落谁家</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=677611" title="【超神快讯1+1】第二季第九期 揭秘KPL陷入五的怪圈">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/6356648df90ebf578c39d0b05510e3ed/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">550952</em><em class="fr">11-12</em></span>
+<span class="video-tit" title=" 【超神快讯1+1】第二季第九期 揭秘KPL陷入五的怪圈"> 【超神快讯1+1】第二季第九期 揭秘KPL陷入五的怪圈</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=675702" title="【超神快讯1+1】第二季第八期 英凯47吐露电竞人心声，成都AG上周竟有新变化！">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/1b628c1b4abf78f03cb83beb47e40aee/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">37689</em><em class="fr">11-05</em></span>
+<span class="video-tit" title=" 【超神快讯1+1】第二季第八期 英凯47吐露电竞人心声，成都AG上周竟有新变化！"> 【超神快讯1+1】第二季第八期 英凯47吐露电竞人心声，成都AG上周竟有新变化！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=673526" title="【超神快讯1+1】第二季第七期 新门派竟有三徒弟？成都AG和DYG谁能脱颖而出">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/2e422b913be7016538e3a32bc95baf57/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">8413</em><em class="fr">10-29</em></span>
+<span class="video-tit" title=" 【超神快讯1+1】第二季第七期 新门派竟有三徒弟？成都AG和DYG谁能脱颖而出"> 【超神快讯1+1】第二季第七期 新门派竟有三徒弟？成都AG和DYG谁能脱颖而出</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=671003" title="【超神快讯1+1】第二季第六期 英凯47献唱新曲！DYG傲视群雄无人可挡？">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/a6dd13d734de3da04653c247d1b7cc25/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">32355</em><em class="fr">10-22</em></span>
+<span class="video-tit" title=" 【超神快讯1+1】第二季第六期 英凯47献唱新曲！DYG傲视群雄无人可挡？"> 【超神快讯1+1】第二季第六期 英凯47献唱新曲！DYG傲视群雄无人可挡？</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=699601" title="【加菲】荣耀宅急送41：冬冠DYG全员恶人，诺队在线忽悠队友">
+<img height="110" src="https://img.tgl.qq.com/cover/20210122/1a3754af692bce8326f77e66be54efb3_1611283254.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">16362</em><em class="fr">01-22</em></span>
+<span class="video-tit" title=" 【加菲】荣耀宅急送41：冬冠DYG全员恶人，诺队在线忽悠队友"> 【加菲】荣耀宅急送41：冬冠DYG全员恶人，诺队在线忽悠队友</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=696590" title="【加菲】荣耀宅急送40：冬冠伤害不高，侮辱性极大？">
+<img height="110" src="https://img.tgl.qq.com/cover/20210112/c1023b3597d22b7e67930804502f188a_1610460118.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">9265</em><em class="fr">01-13</em></span>
+<span class="video-tit" title=" 【加菲】荣耀宅急送40：冬冠伤害不高，侮辱性极大？"> 【加菲】荣耀宅急送40：冬冠伤害不高，侮辱性极大？</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=691411" title="【加菲】荣耀宅急送38：DYG四年终得一冠，林教练泪洒直播间">
+<img height="110" src="https://img.tgl.qq.com/cover/20201226/a2d9a5d7290ab9c492d1d695be2cd17c_1608958808.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">5875</em><em class="fr">12-26</em></span>
+<span class="video-tit" title=" 【加菲】荣耀宅急送38：DYG四年终得一冠，林教练泪洒直播间"> 【加菲】荣耀宅急送38：DYG四年终得一冠，林教练泪洒直播间</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=684368" title="【加菲】荣耀宅急送36：重庆QG对战南京Hero效果拉满！">
+<img height="110" src="https://itea-cdn.qq.com/file/tgl/2020120214/3d6e6250db88a1ed24d0a174706ce953.1606919429.4a94a537b0b1f756d7b17581ecf4187c.230x140_57890.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">2150</em><em class="fr">12-03</em></span>
+<span class="video-tit" title=" 【加菲】荣耀宅急送36：重庆QG对战南京Hero效果拉满！"> 【加菲】荣耀宅急送36：重庆QG对战南京Hero效果拉满！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=682242" title="【加菲】荣耀宅急送35：生而为鸟不受鸟气，暖阳不讲道德的啊！">
+<img height="110" src="https://itea-cdn.qq.com/file/tgl/2020112515/7e78665865af41bdfed19408d6316ec9.1606317330.71e39040811bbcf2987b02ea9188e95f.230x140_80144.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">2734</em><em class="fr">11-26</em></span>
+<span class="video-tit" title=" 【加菲】荣耀宅急送35：生而为鸟不受鸟气，暖阳不讲道德的啊！"> 【加菲】荣耀宅急送35：生而为鸟不受鸟气，暖阳不讲道德的啊！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=679885" title="【荣耀宅急送】34：诺马重出江湖，十三竟遭前队友特殊照顾！">
+<img height="110" src="https://itea-cdn.qq.com/file/tgl/2020111812/4d2ef42480baaa71cb4c170fd11235e8.1605702666.8080e842f13eac37ffd43a840a45312d.230x140_56800.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">14712</em><em class="fr">11-18</em></span>
+<span class="video-tit" title=" 【荣耀宅急送】34：诺马重出江湖，十三竟遭前队友特殊照顾！"> 【荣耀宅急送】34：诺马重出江湖，十三竟遭前队友特殊照顾！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=677952" title="【荣耀宅急送】33：武德是什么？年轻人只要胜利！">
+<img height="110" src="https://itea-cdn.qq.com/file/tgl/2020111113/e3b037639c0a3f683da2be729621cb86.1605103175.fc037c5301f61844384a4d6edbaab899.230x140_78343.png" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">3396</em><em class="fr">11-12</em></span>
+<span class="video-tit" title=" 【荣耀宅急送】33：武德是什么？年轻人只要胜利！"> 【荣耀宅急送】33：武德是什么？年轻人只要胜利！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=675744" title="【荣耀宅急送】32：AG月光强吻sk，直击DYG灵魂深处">
+<img height="110" src="https://itea-cdn.qq.com/file/tgl/2020110504/3d6e6250db88a1ed24d0a174706ce953.1604550053.e73e2c585be3183515a7f11091d99ff8.230x140_61885.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">5822</em><em class="fr">11-05</em></span>
+<span class="video-tit" title=" 【荣耀宅急送】32：AG月光强吻sk，直击DYG灵魂深处"> 【荣耀宅急送】32：AG月光强吻sk，直击DYG灵魂深处</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=786390" title="新年特辑｜团圆不仅是活着的人，心在一起就是团圆！">
+<img height="110" src="https://img.tgl.qq.com/cover/20220131/a0f45d5fe0fe61cbca52f8e976c66736_1643595471.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">472</em><em class="fr">01-31</em></span>
+<span class="video-tit" title=" 新年特辑｜团圆不仅是活着的人，心在一起就是团圆！"> 新年特辑｜团圆不仅是活着的人，心在一起就是团圆！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=612874" title="王者好莱坞13：粉丝为了Gemini不奶QG花钱让他念ID？">
+<img height="110" src="//itea-cdn.qq.com/file/tgl/2020050410/258d4f2462a5786c490ad80ad87bf663.1588557990.db405a2ba81a2c8cfae6f2d3d810c516.230x140_71367.png" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">42716</em><em class="fr">05-04</em></span>
+<span class="video-tit" title=" 王者好莱坞13：粉丝为了Gemini不奶QG花钱让他念ID？"> 王者好莱坞13：粉丝为了Gemini不奶QG花钱让他念ID？</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=608263" title="王者好莱坞12:Gemini">
+<img height="110" src="//itea-cdn.qq.com/file/tgl/2020041921/6ebab9f639aef9bff0caf02f3bfef1b2.1587304786.1d5e468a8c3aa38b06286f2f604b9b10.230x140_59997.png" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">25476</em><em class="fr">04-20</em></span>
+<span class="video-tit" title=" 王者好莱坞12:Gemini"> 王者好莱坞12:Gemini</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=604297" title="王者好莱坞11：奶王gemini在KPL拿到了五连绝世？">
+<img height="110" src="https://itea-cdn.qq.com/file/tgl/2020040713/48bafc503cbdbf5e49ca9725f980e241.1586238664.e1fe5d457d1d2e41665b66342982de0c.230x140_65539.png" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">21727</em><em class="fr">04-09</em></span>
+<span class="video-tit" title=" 王者好莱坞11：奶王gemini在KPL拿到了五连绝世？"> 王者好莱坞11：奶王gemini在KPL拿到了五连绝世？</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=582433" title="王者好莱坞08：生而无畏战至终章 巅峰之上五冠绝世！">
+<img height="110" src="//itea-cdn.qq.com/file/tgl/20200111/7635027ea09f373c13a2f68a17054110.1578736007.307175ddbd9afec5af99669fd1100a90.230x140_44797.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">18424</em><em class="fr">01-13</em></span>
+<span class="video-tit" title=" 王者好莱坞08：生而无畏战至终章 巅峰之上五冠绝世！"> 王者好莱坞08：生而无畏战至终章 巅峰之上五冠绝世！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=581041" title="王者好莱坞07：世界名画？全员莽夫eStar 高地三人罚站">
+<img height="110" src="https://itea-cdn.qq.com/file/tgl/20200106/fdee8bd51adee444fff78c4707657562.1578276391.edb7bf364e955959b8b7e065a5b7db35.230x140_42003.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">84454</em><em class="fr">01-06</em></span>
+<span class="video-tit" title=" 王者好莱坞07：世界名画？全员莽夫eStar 高地三人罚站"> 王者好莱坞07：世界名画？全员莽夫eStar 高地三人罚站</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=579090" title="王者好莱坞06：冬冠杯！KPL四大毒奶同台竞技">
+<img height="110" src="//itea-cdn.qq.com/file/tgl/20191228/6da9003b743b65f4c0ccd295cc484e57.1577516154.65f9e1036a136c3e308447d6288b9720.230x140_32715.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">31133</em><em class="fr">12-30</em></span>
+<span class="video-tit" title=" 王者好莱坞06：冬冠杯！KPL四大毒奶同台竞技"> 王者好莱坞06：冬冠杯！KPL四大毒奶同台竞技</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=577678" title="王者好莱坞05：青春与热血，赤子AG三载征战加冕为王">
+<img height="110" src="https://itea-cdn.qq.com/file/tgl/20191223/67204378de3cb12bb5c2b5b9bf727620.1577081183.717af79980893ccce0d69602a4478f00.230x140_24469.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">13232</em><em class="fr">12-23</em></span>
+<span class="video-tit" title=" 王者好莱坞05：青春与热血，赤子AG三载征战加冕为王"> 王者好莱坞05：青春与热血，赤子AG三载征战加冕为王</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+</ul>
+<h2>英雄攻略</h2>
+<ul>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=839839" title="为什么你上官婉儿实战中经常断大？看完这个视频飞天成功率99%">
+<img height="110" src="//puui.qpic.cn/vpic_cover/a35077p1qcq/a35077p1qcq_first.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">0</em><em class="fr">03-25</em></span>
+<span class="video-tit" title=" 为什么你上官婉儿实战中经常断大？看完这个视频飞天成功率99%"> 为什么你上官婉儿实战中经常断大？看完这个视频飞天成功率99%</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=839821" title="顶级意识，如何欺骗打野，双国一婉儿秋风">
+<img height="110" src="//campfire-1255653016.file.myqcloud.com/campfire-img/436834715/1679739085008_%E5%AE%9E%E6%88%98%E6%95%99%E5%AD%A6%E5%B0%81%E9%9D%A2.png" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">1</em><em class="fr">03-25</em></span>
+<span class="video-tit" title=" 顶级意识，如何欺骗打野，双国一婉儿秋风"> 顶级意识，如何欺骗打野，双国一婉儿秋风</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=839818" title="不重复挑战大乱斗！第二十五弹，暃，打野胜利了！">
+<img height="110" src="//campfire-1255653016.file.myqcloud.com/campfire-img/341664511/1679735728198_%E6%9A%83%20%C2%B7%20%E6%98%9F%E7%95%8C%E6%B8%B8%E4%BE%A0.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">13</em><em class="fr">03-25</em></span>
+<span class="video-tit" title=" 不重复挑战大乱斗！第二十五弹，暃，打野胜利了！"> 不重复挑战大乱斗！第二十五弹，暃，打野胜利了！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=839814" title="玩好弱化艾琳的诀窍就2个字：示弱！">
+<img height="110" src="//campfire-1255653016.file.myqcloud.com/campfire-img/441851474/1679734505493_2023%E5%B9%B42%E6%9C%8822%E6%97%A5%E7%8E%A9%E5%A5%BD%E5%BC%B1%E5%8C%96%E8%89%BE%E7%90%B3%E7%9A%84%E8%AF%80%E7%AA%8D%E5%B0%B12%E4%B8%AA%E5%AD%97%EF%BC%9A%E7%A4%BA%E5%BC%B1%EF%BC%81" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">2</em><em class="fr">03-25</em></span>
+<span class="video-tit" title=" 玩好弱化艾琳的诀窍就2个字：示弱！"> 玩好弱化艾琳的诀窍就2个字：示弱！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=839813" title="这老六射手是“行走的碉堡”吧？这谁顶得住呀！">
+<img height="110" src="//campfire-1255653016.file.myqcloud.com/campfire-img/441851474/1679733995470_2022%E5%B9%B43%E6%9C%8821%E6%97%A5%E8%BF%99%E8%80%81%E5%85%AD%E5%B0%84%E6%89%8B%E6%98%AF%E2%80%9C%E8%A1%8C%E8%B5%B0%E7%9A%84%E7%A2%89%E5%A0%A1%E2%80%9D%E5%90%A7%EF%BC%9F%E8%BF%99%" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">1</em><em class="fr">03-25</em></span>
+<span class="video-tit" title=" 这老六射手是“行走的碉堡”吧？这谁顶得住呀！"> 这老六射手是“行走的碉堡”吧？这谁顶得住呀！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=839816" title="【教学篇】4分钟学会娜可露露操作技巧，傻瓜式教学，一看就会">
+<img height="110" src="//puui.qpic.cn/vpic_cover/n3507c7xees/n3507c7xees_first.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">6</em><em class="fr">03-25</em></span>
+<span class="video-tit" title=" 【教学篇】4分钟学会娜可露露操作技巧，傻瓜式教学，一看就会"> 【教学篇】4分钟学会娜可露露操作技巧，傻瓜式教学，一看就会</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=839815" title="3分钟学会戈娅操作技巧，傻瓜式教学，一看就会！">
+<img height="110" src="//puui.qpic.cn/vpic_cover/l3507phyhh8/l3507phyhh8_first.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">3</em><em class="fr">03-25</em></span>
+<span class="video-tit" title=" 3分钟学会戈娅操作技巧，傻瓜式教学，一看就会！"> 3分钟学会戈娅操作技巧，傻瓜式教学，一看就会！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '英雄视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=839810" title="浮生妄PK永昼，传说对比史诗，你觉得有多大差距？">
+<img height="110" src="http://campfire-1255653016.file.myqcloud.com/campfire-img/230511293/1679727400948_%E7%94%B5%E7%AB%9E%E6%B8%B8%E6%88%8F%E8%A7%A3%E8%AF%B4%E6%B7%B7%E5%89%AA%E6%A8%AA%E7%89%88%E8%A7%86%E9%A2%91%E5%B0%81%E9%9D%A2%281%29%284%29.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">0</em><em class="fr">03-25</em></span>
+<span class="video-tit" title=" 浮生妄PK永昼，传说对比史诗，你觉得有多大差距？"> 浮生妄PK永昼，传说对比史诗，你觉得有多大差距？</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+</ul>
+<!-- 赛事中心 -->
+<h2>赛事中心-视频</h2>
+<ul>
+<!-- KPL -->
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '赛事视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=839820" target="_blank" title="职业比赛打出2.2%的数据，是什么操作？">
+<img height="110" src="//campfire-1255653016.file.myqcloud.com/campfire-img/526634312/1679737858882_bandicam%202023-03-25%2000-05-12-438.00_03_14_46.Still003.png" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">2</em><em class="fr">2023-03-25</em></span>
+<span class="video-tit" title=" 职业比赛打出2.2%的数据，是什么操作？"> 职业比赛打出2.2%的数据，是什么操作？</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '赛事视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=839634" target="_blank" title="【王者炸麦了】lovecd专治赛前飘，狼队林无规则bp杀四方">
+<img height="110" src="//shp.qpic.cn/cfwebcap/0/efdd227c9a721ee6f2632f1e14b9f4e2/0/?width=230&amp;height=140" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">610</em><em class="fr">2023-03-24</em></span>
+<span class="video-tit" title=" 【王者炸麦了】lovecd专治赛前飘，狼队林无规则bp杀四方"> 【王者炸麦了】lovecd专治赛前飘，狼队林无规则bp杀四方</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '赛事视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=839513" target="_blank" title="3月23日KPL比赛，XYG换帅能否首胜，EDGM再败或放假">
+<img height="110" src="//campfire-1255653016.file.myqcloud.com/campfire-img/358294645/1679563694970_c7f7ff74dbd544ed84f306ffa9b576a7_noop.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">2</em><em class="fr">2023-03-23</em></span>
+<span class="video-tit" title=" 3月23日KPL比赛，XYG换帅能否首胜，EDGM再败或放假"> 3月23日KPL比赛，XYG换帅能否首胜，EDGM再败或放假</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '赛事视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=839516" target="_blank" title="第一支放假战队诞生，XYG零胜率恐随其后！">
+<img height="110" src="//campfire-1255653016.file.myqcloud.com/campfire-img/358294645/1679565097738_aa18972bd40735fafa63b85a8542e7b80e240864.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">3</em><em class="fr">2023-03-23</em></span>
+<span class="video-tit" title=" 第一支放假战队诞生，XYG零胜率恐随其后！"> 第一支放假战队诞生，XYG零胜率恐随其后！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '赛事视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=839285" target="_blank" title="【KPL复盘】输的炸裂，赢的丑陋，谁能拯救AG">
+<img height="110" src="//campfire-1255653016.file.myqcloud.com/campfire-img/325884735/1679457490661_%E5%B0%81%E9%9D%A23.png" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">2</em><em class="fr">2023-03-22</em></span>
+<span class="video-tit" title=" 【KPL复盘】输的炸裂，赢的丑陋，谁能拯救AG"> 【KPL复盘】输的炸裂，赢的丑陋，谁能拯救AG</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '赛事视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=839115" target="_blank" title="Cat？是苏烈大闪拍四个的Catgod！">
+<img height="110" src="//puui.qpic.cn/vpic_cover/g1469mmujbm/g1469mmujbm_first.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">5</em><em class="fr">2023-03-21</em></span>
+<span class="video-tit" title=" Cat？是苏烈大闪拍四个的Catgod！"> Cat？是苏烈大闪拍四个的Catgod！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '赛事视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=839020" target="_blank" title="eStar被普遍看衰！KPL解说预测总冠军，狼队呼声最高！">
+<img height="110" src="//campfire-1255653016.file.myqcloud.com/campfire-img/358294645/1679308904404_v2-9693a6a87aa5d0adb9ef766c1bc883d5_720w.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">2</em><em class="fr">2023-03-20</em></span>
+<span class="video-tit" title=" eStar被普遍看衰！KPL解说预测总冠军，狼队呼声最高！"> eStar被普遍看衰！KPL解说预测总冠军，狼队呼声最高！</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+<li class="tganime-fadein-trigger" onclick="PTTSendClick('raidersCenter','video', '赛事视频');">
+<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=839016" target="_blank" title="AG粉丝昏头了？请求菲菲干预赛训，要换教练和上野辅？">
+<img height="110" src="//campfire-1255653016.file.myqcloud.com/campfire-img/358294645/1679307489657_c8e1443d872f1ab9e8ebcc9c6168ec1393a74cac.jpg" width="173"/>
+<span class="clearfix play-bar"><em class="fl ico-play">2</em><em class="fr">2023-03-20</em></span>
+<span class="video-tit" title=" AG粉丝昏头了？请求菲菲干预赛训，要换教练和上野辅？"> AG粉丝昏头了？请求菲菲干预赛训，要换教练和上野辅？</span>
+<div class="mask pa tganime-fadein-child"><span class="mask-play-ico"></span></div>
+</a>
+</li>
+</ul>
+<h2>赛事中心-资讯</h2>
+<ul>
+<!-- KPL -->
+<li>
+<a class="fl news-txt news-txt1" href="https://pvp.qq.com/web201605/newsDetail.shtml?G_Biz=web&amp;tid=594427" target="_blank">2023KPL春季赛常规赛第二轮赛程及售票信息公布</a>
+<em class="fr news-time">03-07</em>
+</li>
+<li>
+<a class="fl news-txt news-txt1" href="https://pvp.qq.com/web201605/newsDetail.shtml?G_Biz=web&amp;tid=592188" target="_blank">23KPL春季赛常规赛第一轮门票将于2月3日12：00开售！</a>
+<em class="fr news-time">02-02</em>
+</li>
+<li>
+<a class="fl news-txt news-txt1" href="https://pvp.qq.com/web201605/newsDetail.shtml?G_Biz=web&amp;tid=592148" target="_blank">2023年KPL王者荣耀职业联赛春季赛常规赛第一轮赛程</a>
+<em class="fr news-time">02-02</em>
+</li>
+<li>
+<a class="fl news-txt news-txt1" href="https://pvp.qq.com/web201605/newsDetail.shtml?G_Biz=web&amp;tid=592114" target="_blank">王者荣耀职业联赛（KPL）2023春季赛赛事规则</a>
+<em class="fr news-time">02-01</em>
+</li>
+<li>
+<a class="fl news-txt news-txt1" href="https://pvp.qq.com/web201605/newsDetail.shtml?G_Biz=web&amp;tid=586291" target="_blank">2023年KPL王者荣耀职业联赛赛制升级，全新对决一触即发！</a>
+<em class="fr news-time">11-14</em>
+</li>
+<li>
+<a class="fl news-txt news-txt1" href="https://pvp.qq.com/web201605/newsDetail.shtml?G_Biz=web&amp;tid=580992" target="_blank">23年KPL春季选秀招募开启-进入KPL的唯一选秀通道</a>
+<em class="fr news-time">09-20</em>
+</li>
+<li>
+<a class="fl news-txt news-txt1" href="https://pvp.qq.com/web201605/newsDetail.shtml?G_Biz=web&amp;tid=579386" target="_blank">上最右 为KPL战队助威</a>
+<em class="fr news-time">08-31</em>
+</li>
+</ul>
+</div>
+<!-- 下载 -->
+<div class="dialog download-popup" id="download" style="display:none">
+<div class="dia-con">
+<div class="dia-download clearfix">
+<div class="code"><img src="//game.gtimg.cn/images/yxzj/web201706/images/comm/code.png"/></div>
+<div class="btnlist">
+<a class="pc" href="//dlied6.qq.com/invc/xfspeed/qqpcmgr/download/GameDownload_wzry_Build4096_12.exe" onclick="PTTSendClick('downloadDialog','pc','PC模拟器下载');" target="_blank"></a>
+<a class="ios" href="https://pvp.qq.com/zlkdatasys/mct/d/play.shtml?device=ios" onclick="PTTSendClick('download','download_iostop','ios下载');" target="_blank"></a>
+<a class="android" href="https://pvp.qq.com/zlkdatasys/mct/d/play.shtml?device=android" onclick="PTTSendClick('download','download_androidtop','安卓下载');" target="_blank"></a>
+<a class="android1" href="https://dlied4.myapp.com/myapp/1104466820/cos.release-40109/2017_com.tencent.tmgp.sgame_h2484315_8.2.1.9_W5nt8f.apk" onclick="PTTSendClick('downloadDialog','androidMini','安卓精简版下载');" target="_blank"></a>
+</div>
+</div>
+</div>
+<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<!-- 直播(大) -->
+<div class="dialog pop-video" id="video_pop" style="display: none;">
+<div class="dia-con pop-video-db">
+<div class="main">
+<div id="con">
+<div class="con-i">
+<div class="video" id="mod_player"></div>
+</div>
+</div>
+</div>
+</div>
+<a class="pop-video-close" href="javascript:showDialog.hide();" title="点击关闭">点击关闭</a>
+<a class="pop-video-small" href="javascript:showDialog.hide();" title="点击缩小">点击缩小</a>
+<a class="pop-video-link" href="//pvp.qq.com/act/a20170625kpl/index.htm?ADTAG=pvp.hi" id="popVideoLink" title="进入专题">进入专题</a>
+</div>
+<!-- 直播(缩小) -->
+<div class="videopop" id="videoSpop">
+<a class="clspop" href="javascript:;">×</a>
+<div class="vpop" id="vpop"></div>
+</div>
+<div class="shiling-pop" id="shilingPop">
+<div class="pop-mask"></div>
+<div class="pop-inner">
+<div class="pop-title">适龄提示：</div>
+<div class="pop-desc">
+<p>1）本游戏是一款玩法相对复杂的MOBA类游戏，适用于年满12周岁及以上的用户，建议未成年人在家长监护下使用游戏产品。</p>
+<p>2）本游戏基于架空的故事背景和幻想世界观，画面色彩鲜明、配乐明快，没有设置主体剧情。游戏中部分英雄角色有基于历史的适量改编，不会与现实相混淆。游戏中有需要多人进行的团队竞技，玩法基于一定难度的思维判断和操作，鼓励玩家通过沟通、思考和训练达成目标。游戏中有基于语音和文字的陌生人社交系统，但社交系统的管理遵循相关法律法规。</p>
+<p>3）根据国家相关要求，游戏中有用户实名认证系统，未通过实名认证的用户不可进入游戏；认证为未成年人的用户除周五、周六、周日及法定节假日每日20时至21时外其他时间均不可进入游戏。
+				<br/>游戏中部分玩法和道具需要付费。根据腾讯健康系统管理规定，认证为未成年人的用户将接受以下管理：
+				<br/>未满12周岁的用户不能付费；12周岁以上未满16周岁的未成年人用户，单次充值金额不得超过50元人民币，每月充值金额累计不得超过200元人民币；16周岁以上的未成年人用户，单次充值金额不得超过100元人民币，每月充值金额累计不得超过400元人民币。
+				</p>
+<p>4）游戏竞技中的操作训练有助于锻炼玩家的手眼协调能力和快速反应能力，基于团队的玩法可以锻炼玩家的沟通能力、团队协作能力和大局观；同时在游戏动画、角色设计、服饰搭配等方面结合了众多中华传统文化元素，如敦煌飞天、传统戏曲等，能够激起玩家对优秀传统文化的兴趣，增强文化认同感。</p>
+</div>
+<div class="pop-close"></div>
+</div>
+</div>
+<!-- 购票二维码弹窗 -->
+<div class="dia-ticket" id="ticket" style="display: none">
+<div class="close" onclick="showDialog.hide()"></div>
+<p>扫描下方二维码，前往购票</p>
+<img class="qr-code" src="//game.gtimg.cn/images/yxzj/match/center2018/images/kplticket.png"/>
+</div>
+<style>
+  .dia-ticket{
+    background: url('//game.gtimg.cn/images/yxzj/match/center2018/images/bg-dia.png') no-repeat center/cover;
+    width: 530px;
+    height: 244px;
+    box-sizing: border-box;
+    padding-top:30px;
+  }
+  .dia-ticket p{
+    text-align: center;
+    color:#c29c58;
+    font-size:20px;
+    line-height: 1;
+  }
+  .dia-ticket img{
+    display: block;
+    width:130px;
+    height:130px;
+    margin:12px auto 0;
+  }
+  .dia-ticket .close {
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+</style>
+<!-- 直播弹层 config -->
+<!-- virtual="/webplat/info/news_version3/15592/24091/27100/m16761/index.shtml"-->
+<!-- 右下角弹层 config -->
+<!-- 右侧漂窗 2022-06-14 -->
+<style>
+.r_nav{pointer-events:none; position: fixed;z-index:3;  top: 50%; right: 0;margin-top:-240px; width: 254px; height: 494px; background:url("https://game.gtimg.cn/images/yxzj/web201706/images/comm/floatwindow/r_navBg.png") no-repeat top left; }
+.r_nav li{list-style:none;padding:0;}
+.r_nav div,.r_nav li,.r_nav p,.r_nav a{padding:0;margin:0;}
+.r_nav .r_con{pointer-events:auto; position: absolute; top: 160px; left: 85px; }
+.r_nav .r_dj{ position: absolute; top: 15px; left: 24px; z-index: 2; width: 165px; height: 145px; background: url("https://game.gtimg.cn/images/yxzj/web201706/images/comm/floatwindow/r_dj.png") no-repeat top center;}
+.r_nav .r_dj p{display: block; position: absolute; top: 37px; left: 12px; width: 88px; height: 36px; font-size: 14px; text-indent: 2px; font-weight: bold; line-height: 18px; color: #62401b; overflow: hidden;}
+.r_con .down_spr{
+    background-image: url("https://game.gtimg.cn/images/yxzj/web201706/images/comm/floatwindow/r_all2022.png") ;
+    background-repeat: no-repeat;
+    background-size:360px 569px ;
+}
+.r_nav .r_con .r_yyw,.r_nav .r_con .r_code{ 
+    position: relative; 
+    width: 117px; 
+    height: 134px;
+    background-position: -246px -1px;;
+    padding-top: 2px;
+   
+}
+.r_nav .r_con .r_yyw,.r_nav .r_con .r_code.code_wz{
+    height: 132px;
+    background-position:-243px 0;
+}
+.r_nav .r_con .r_yyw,.r_nav .r_con .r_code.code_yd{ 
+    height: 113px;
+    padding-top: 3px;
+    background-position: 0 -3px;
+}
+.r_nav .r_con .topImg,.yybd .yyInfo,.r_assBg .assCode{ display: block; margin: 0 auto;}
+.r_nav .r_con .r_code{ margin-top: 1px;}
+.r_con .r_burst,.r_con .r_assistant,.r_con .r_wc_yd,.r_con .r_wc_gzh, .r_con .r_wc_role, .r_wc_sph{ width: 117px; height: 38px; margin-top: 1px;position:relative; }
+.r_con .r_burst{  background-position: -122px -120px;position: relative;}
+.r_con .r_burst a, .r_con .r_wc_survey a{ display: block; width: 100%; height: 100%;}
+.r_con .r_assistant{ position: relative;  background-position: 0 -160px;}
+.yybd{ display: none; position: absolute; top: 0; left: -200px;  width: 199px; height: 131px;  background-position: 0 -281px; padding-top: 2px}
+.yybd p{ position: absolute; bottom: 2px; left: 50%; width: 195px; height: 30px; margin-left: -97.5px; text-align: center; line-height: 30px; color: #dcdcdc; font-size: 12px; overflow: hidden}
+.r_con .r_assBg{display: none; position: absolute; top: -66px; left: -116px;  width: 115px; height: 144px;  background-position: 0 -416px; padding-top: 7px }
+.r_assBg .assCode{ margin-bottom: 6px;}
+.r_assBg p{ width: 101px; height: 34px; line-height: 17px; color: #dcdcdc; font-size: 12px; text-align: center; margin: 0 auto; overflow: hidden}
+.r_assBg p span{ color: #cd974b;}
+.r_con .r_burst:hover{  background-position:-122px -240px;}
+.r_con .r_assistant:hover{ background-position: 0 -240px;}
+.r_con .r_yyw:hover .yybd{ display: block}
+.r_con .r_assistant:hover .r_assBg,.r_con .r_assistant:hover .r_assBg,.r_con .r_wc_gzh:hover .r_assBg,.r_con .r_burst:hover .r_assBg, .r_con .r_wc_role:hover .r_assBg, .r_con .r_wc_sph:hover .r_assBg{ display: block}
+.r_con .r_wc_gzh{ position: relative;  background-position: -122px -160px;}
+.r_con .r_wc_gzh:hover{  background-position: -122px -200px;}
+.r_con .r_wc_yd{
+    background-position:  -243px -134px;
+}
+.r_con .r_wc_yd:hover{
+    background-position: -243px -172px;
+}
+.r_con .r_wc_role{  background-position: -122px -417px;}
+.r_con .r_wc_role:hover{  background-position: -122px -458px;}
+.r_con .r_wc_sph{  background-position: -122px 0;}
+.r_con .r_wc_sph:hover{  background-position:-122px -42px;}
+.r_wc_gzh .r_assBg p{ width: 100%;}
+.r_wc_sph .r_assBg p{ width: 100%;}
+.r_burst .r_assBg p{ width: 100%;}
+.r_nav .r_dj p:last-child{
+    top: 57px;
+    display: block;
+}
+.r_con .r_wc_gzh{
+    margin-top: 0;
+}
+
+</style>
+<div class="r_nav" exposure-tag="down_flow,首页下载浮窗">
+<div class="r_dj">
+<p>扫一扫，立刻</p>
+<p>下载游戏~</p>
+</div>
+<ul class="r_con">
+<li class="r_code down_spr code_wz">
+<img alt="下载游戏" class="topImg" height="107" src="https://game.gtimg.cn/images/yxzj/web201706/images/comm/floatwindow/wzry_qrcode.jpg" width="107">
+</img></li>
+<li class="r_wc_yd tganime-fadein-trigger down_spr">
+<div class="r_assBg tganime-fadein-child down_spr">
+<img alt="营地" class="assCode" height="100" src="https://game.gtimg.cn/images/yxzj/web201706/images/comm/floatwindow/yd_qrcode.jpg" width="101">
+<p>扫码<span>下载王者营地</span><br>每天<span>领取福利好礼</span></br></p>
+</img></div>
+</li>
+<li class="r_burst tganime-fadein-trigger down_spr"><a href="//weibo.com/heromoba" onclick="PTTSendClick('link','gfwb','官方微博');" target="_blank" title="官方微博"></a>
+<div class="r_assBg tganime-fadein-child down_spr">
+<img alt="官方微博" class="assCode" height="100" src="https://game.gtimg.cn/images/yxzj/web201706/images/comm/floatwindow/weibo.jpg" width="101">
+<p>扫码<span>关注官方微博</span><br>获取<span>一手爆料及福利</span></br></p>
+</img></div>
+</li>
+<li class="r_wc_gzh tganime-fadein-trigger down_spr">
+<div class="r_assBg tganime-fadein-child down_spr">
+<img alt="微信公众号" class="assCode" height="100" src="https://game.gtimg.cn/images/yxzj/web201706/images/comm/floatwindow/gzh_code.jpg" width="101">
+<p>扫码<span>关注官方公众号</span><br/>获取<span>最新资讯及好礼</span></p>
+</img></div>
+</li>
+<li class="r_wc_sph tganime-fadein-trigger down_spr">
+<div class="r_assBg tganime-fadein-child down_spr">
+<img alt="视频号" class="assCode" height="100" src="https://game.gtimg.cn/images/yxzj/web201706/images/comm/floatwindow/shipinhao_code.jpg" width="101">
+<p>扫码<span>关注官方视频号</span><br/>获取<span>精彩视频及福利</span></p>
+</img></div>
+</li>
+</ul>
+</div>
+<script>
+
+    window.onload=function(){
+        // 页面加载完成上报一次
+        PTTSendClick('down-nav','down_flow','首页下载')
+    }
+    </script>
+<!-- 互动营 2018-06-13 -->
+<!-- <a href="//pvp.qq.com/hdy/p1/award.html?ADTAG=pvp.index.xfbtn" target="_blank" class="hudongying"></a> -->
+<script>var isdSpeedRecorderDomLoaded = new Date();</script>
+<!-- Lib  -->
+<script src="//game.gtimg.cn/images/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="//game.gtimg.cn/images/yxzj/web201706/js/lazyload.min.js"></script>
+<!-- <script src="//game.gtimg.cn/images/js/milo/milo.js"></script> -->
+<script crossorigin="anonymous" src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+<script src="//game.gtimg.cn/images/js/ide/latest/ide.gbk.min.js"></script>
+<!-- Site header footer  -->
+<!-- <script src="ossweb-img/js/header.js"></script> -->
+<script charset="gbk" src="//game.gtimg.cn/images/yxzj/web201706/js/header.js"></script>
+<script charset="gbk" src="//game.gtimg.cn/images/yxzj/web201706/js/footer.js"></script>
+<script src="//game.gtimg.cn/images/js/title.js"></script>
+<!-- AMS KV Link -->
+<div id="kvLinkSetDiv" style="display:none">
+<div class="kv-bg" style="background-image:url(//ossweb-img.qq.com/upload/webplat/info/yxzj/20230323/24388542544116.jpg);">
+<a class="kv_link" href="https://pvp.qq.com/coming/v2/skins/0325-fswxlt.shtml?ADTAG=pvp.skin.pcgw" onclick="PTTSendClick('btn','topkv','进入专题');" target="_blank" title="查看详情">查看详情</a>
+</div>
+</div>
+<!-- page js -->
+<script src="//gicp.qq.com/wmp/data/js/PAGE_WMP_BIZ_TYPE.js"></script>
+<script src="//game.gtimg.cn/images/yxzj/web201706/js/public/Activity_Comm.js"></script>
+<script src="https://gicp.qq.com/wmp/sys/v3.0/js/wmpCommon_v3_ch.js"></script>
+<script src="//game.gtimg.cn/images/js/eas/eas.js"></script>
+<script src="//game.gtimg.cn/images/yxzj/web201706/js/heroid.js"></script>
+<!-- <script src="ossweb-img/js/index.js"></script> -->
+<script charset="gbk" src="//ossweb-img.qq.com/images/js/comm/idata.tgads.js"></script>
+<script src="//game.gtimg.cn/images/yxzj/web201706/js/public/md5.js"></script>
+<script src="//game.gtimg.cn/images/yxzj/web201706/js/index.js"></script>
+<script src="//game.gtimg.cn/images/yxzj/web201706/js/main.js"></script>
+<!-- 统计代码 -->
+<script src="//game.gtimg.cn/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script src="//game.gtimg.cn/images/yxzj/web201706/js/tganime.js"></script>
+<!-- <script src="//ossweb-img.qq.com/images/spiderMediaData/yxzj_new/mediaURLData_https.js"></script> -->
+<script type="text/javascript">
+// 下载按钮动画适配
+if(window.CSS && window.CSS.supports && window.CSS.supports('filter', 'blur(32px)')){
+	document.getElementById('download-btn-ani').style.display  = 'block';
+}
+
+var setSite={   //设置网站属性
+	siteType:"os",
+	pageType:"index",   //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+	pageName:"首页",  //必填项:页面中文名
+	osact:'pc',    //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+	project: 'base'
+}
+if(typeof(pgvMain)=='function')pgvMain();
+
+/* isd测速 */
+// $(window).load(function() {
+// 	var isdSpeedRecorderWindowLoaded = new Date();var url = '';
+// 	if(Math.random() < 0.3) {
+// 		// url = '//isdspeed.qq.com/cgi-bin/r.cgi?flag1=7718&flag2=249&flag3=1&14=' + (isdSpeedRecorderDomLoaded - isdSpeedRecorderInit) + '&15=' + (isdSpeedRecorderWindowLoaded - isdSpeedRecorderInit);
+// 		url = '//report.huatuo.qq.com/report.cgi?appid=20286&speedparams=';
+// 		url += encodeURIComponent('flag1=21854&flag2=1&flag3=8&1=' + (isdSpeedRecorderDomLoaded - isdSpeedRecorderInit) + '&2=' + (isdSpeedRecorderWindowLoaded - isdSpeedRecorderInit) + '&device=pc');
+// 		var imgSendTimePoint = new Image();
+// 		imgSendTimePoint.src  = url;
+// 	}
+// });
+
+// tganime
+var tganimeTimer = setTimeout(function() {
+	TGAnime.init('tganime-slide-slidein', {tab: '.news-tab-underline',slide: '.news-slide-list', tabChild: '.news-tab-underline li'})
+	TGAnime.init('tganime-slide-slidein', {tab: '.skin-center-tab',slide: '.skin-center-list', tabChild: '.skin-center-tab a'})
+
+	clearTimeout( tganimeTimer );
+}, 100)
+
+// function initIndexVideo(){
+// 	var random = Math.random()
+// 	if(mediaURLData && mediaURLData[4818] && random > 0.5){
+// 		var $videoBack = $('<video src="'+ mediaURLData[4818] +'" class="kv-video" autoplay="autoplay" loop="loop" muted="muted"></video>')
+// 		$('.kv-bg').append($videoBack)
+// 		PTTSendClick('kv','active','动态kv')
+// 		$('.kv_link').on('click', function(){
+// 			PTTSendClick('kv','activeclick','动态kv')
+// 		})
+// 	}else{
+// 		PTTSendClick('kv','static','静态kv')
+// 		$('.kv_link').on('click', function(){
+// 			PTTSendClick('kv','staticclick','动态kv')
+// 		})
+// 	}
+// }
+
+// initIndexVideo()
+
+
+
+</script>
+</body>
+</html>
+<!--include virtual="/cp/a20220914sfqsp/index.html" -->
