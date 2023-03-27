@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2e4b07c-5408-4f5a-8710-fb265598c563" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hellow_xpath.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xxx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day01/爬取豆瓣.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day01/爬取豆瓣.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/day02.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/day02.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxx.py" beforeDir="false" afterPath="$PROJECT_DIR$/xxx.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +30,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.hellow_xpath">
