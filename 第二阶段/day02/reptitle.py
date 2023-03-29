@@ -18,6 +18,7 @@ header={
 res=requests.get(url,headers=header)
 res.encoding='gbk'
 
+print(res.text)
 et = etree.HTML(res.text)
 heros = et.xpath("//div[@class='herolist-content']/ul/li/a/text()")
 for i in heros:

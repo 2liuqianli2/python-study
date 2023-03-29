@@ -586,6 +586,6 @@ html="""
 data=etree.HTML('./demo.html',parser=HTMLParser())
 
 
-h=data.xpath("//div")
+h=data.xpath("//div[@class='herolist-content']/ul/li/a/text()")
 
 print(h)

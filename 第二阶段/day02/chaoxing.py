@@ -14,6 +14,6 @@ header={
 data=requests.get(url,headers=header)
 
 data_xpath=etree.HTML(data.text)
-
-ke=data_xpath.xpath("//*[@id='c_233581519']/div[2]/text()")
+print(data.text)
+ke=data_xpath.xpath("//div[@class='courselistArea'and@id='courselistArea']/div/ul/li/text()")
 print(ke)
