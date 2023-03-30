@@ -3,6 +3,8 @@ import requests
 from bs4 import BeautifulSoup
 from pandas import DataFrame
 import re
+import numpy as np
+from tqdm import tqdm
 
 header={
 "Accept": "text/css,*/*;q=0.1",
@@ -36,24 +38,35 @@ for i in titles:
     # print(b)
 
 dic={
-    "标题":title_list,
-    "网址":herf_list
+    "标题":title_list[1:],
+    "网址":herf_list[1:]
 }
 df=DataFrame(dic)
 
-hh=herf_list[1:30]
+hh=herf_list[1:]
 # print(hh)
 wz_list=[]
 asd=[]
-for i in hh:
+for i in tqdm(hh):
     get_wz=requests.get(i,headers=header)
     soup1=BeautifulSoup(get_wz.content,features='lxml')
-    soup2=soup1.select(".co_content8 ul a")
+    soup2=soup1.select(".co_content8 ul a")[0]
     asd.append(soup2)
-    for i in asd:
-        a=re.compile(r'<a href="magnet:(.*?)com%3a6969%2fannounce')
-        b=a.findall(str(i))[0]
-        wz_list.append(b)
+
+for i in asd:
+    print(i)
+
+# for i in tqdm(asd):
+#     a=re.compile(r'a href="(.*?)" target="')
+#     b = a.findall(str(i))
+#     if len(b)!=0:
+
+#         wz_list.append(b)
+#     else:
+#         wz_list.append(np.nan)
 
 
-print(wz_list)
+
+# df["磁力链接"]=wz_list
+#
+# df.to_excel("高分电影.xlsx",encoding='utf-8')
