@@ -1,4 +1,4 @@
-# Scrapy settings for hello_scrapy project
+# Scrapy settings for hello_xpc project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "hello_scrapy"
+BOT_NAME = "hello_xpc"
 
-SPIDER_MODULES = ["hello_scrapy.spiders"]
-NEWSPIDER_MODULE = "hello_scrapy.spiders"
+SPIDER_MODULES = ["hello_xpc.spiders"]
+NEWSPIDER_MODULE = "hello_xpc.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = "hello_scrapy (+http://www.yourdomain.com)"
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -45,13 +45,13 @@ DEFAULT_REQUEST_HEADERS = {
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "hello_scrapy.middlewares.HelloScrapySpiderMiddleware": 543,
+#    "hello_xpc.middlewares.HelloXpcSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "hello_scrapy.middlewares.HelloScrapyDownloaderMiddleware": 543,
+#    "hello_xpc.middlewares.HelloXpcDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -62,9 +62,9 @@ DEFAULT_REQUEST_HEADERS = {
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-   "hello_scrapy.pipelines.QuotePipeline": 300,
-}
+#ITEM_PIPELINES = {
+#    "hello_xpc.pipelines.HelloXpcPipeline": 300,
+#}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
