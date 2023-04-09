@@ -1,5 +1,7 @@
 import scrapy
 
+from ..items import FilemItem
+
 
 class XpcSpider(scrapy.Spider):
     name = "xpc"
@@ -11,6 +13,24 @@ class XpcSpider(scrapy.Spider):
         print(source[0])
         for i in source:
             a=i.xpath("./div[2]/div/a")
-            text1=a.xpath("./@title")
-            text2=a.xpath("./@href")
-            print(text1,text2)
+            title=a.xpath("./@title").extract_first()
+            href=a.xpath("./@href").extract_first()
+
+            # b = i.xpath("./div[1]/a/div[3]/ul")
+            view_nums=i.xpath("./div/a/div/ul[@class='sc-bfe1476e-0 keonqP']/li[1]/span[2]/text()").extract_first()
+            play_nums=i.xpath("./div/a/div/ul[@class='sc-bfe1476e-0 keonqP']/li[2]/span[2]/text()").extract_first()
+
+            file=FilemItem()
+            file["title"]=title
+            file["href"] =href
+            file["view_nums"]=view_nums
+            file["play_nums"] =play_nums
+
+            yield file
+            # print(view_nums,play_nums)
+            yield scrapy.Request(url=href,callback=self.parse_detail)
+
+    def parse_detail(self,respone):
+
+        detail_href=respone.xpath("//div[@class='xpcplayer-video-wrap']/video/@src")
+        print(detail_href)
