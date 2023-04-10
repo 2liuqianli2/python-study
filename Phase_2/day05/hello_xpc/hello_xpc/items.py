@@ -15,3 +15,7 @@ class FilemItem(scrapy.Item):
     href=scrapy.Field()
     play_nums=scrapy.Field()
     view_nums=scrapy.Field()
+
+class MovieItem(scrapy.Item):
+    movie_name=scrapy.Field()
+    movie_href=scrapy.Field()
