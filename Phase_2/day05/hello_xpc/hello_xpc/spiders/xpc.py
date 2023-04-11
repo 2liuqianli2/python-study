@@ -6,7 +6,7 @@ from ..items import FilemItem, MovieItem
 class XpcSpider(scrapy.Spider):
     name = "xpc"
     allowed_domains = ["www.xinpianchang.com"]
-    start_urls = ["https://www.xinpianchang.com/discover/article-1-0-all-all-0-0-hot?from=navigator"]
+    start_urls = ["https://www.xinpianchang.com/discover/article-1-0-all-all-0-0-hot?from=navigator","https://www.xinpianchang.com/discover/article-1-0-all-all-0-0-hot?page=3"]
 
 
 
