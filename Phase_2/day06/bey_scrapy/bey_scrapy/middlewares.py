@@ -82,15 +82,18 @@ class BeyScrapyDownloaderMiddleware:
         # - or return a Request object
         # - or raise IgnoreRequest: process_exception() methods of
         #   installed downloader middleware will be called
+        # if request.url.startswith("http://www.guazi.com/"):
 
-        driver=WebDriver()
-
-        driver.get(request.url)
-        sleep(2)
-        data=driver.page_source.encode("utf-8")
-        response=HtmlResponse(url=request.url,body=data)
-
-        return response
+        # if False:
+        #     driver=WebDriver()
+        #
+        #     driver.get(request.url)
+        #     sleep(2)
+        #     data=driver.page_source.encode("utf-8")
+        #     response=HtmlResponse(url=request.url,body=data)
+        #
+        #     return response
+        return None
 
     def process_response(self, request, response, spider):
         # Called with the response returned from the downloader.
