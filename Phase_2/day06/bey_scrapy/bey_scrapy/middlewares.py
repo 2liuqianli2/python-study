@@ -85,15 +85,15 @@ class BeyScrapyDownloaderMiddleware:
         # if request.url.startswith("http://www.guazi.com/"):
 
         # if False:
-        #     driver=WebDriver()
-        #
-        #     driver.get(request.url)
-        #     sleep(2)
-        #     data=driver.page_source.encode("utf-8")
-        #     response=HtmlResponse(url=request.url,body=data)
-        #
-        #     return response
-        return None
+        driver=WebDriver()
+
+        driver.get(request.url)
+        sleep(2)
+        data=driver.page_source.encode("utf-8")
+        response=HtmlResponse(url=request.url,body=data)
+
+        return response
+        # return None
 
     def process_response(self, request, response, spider):
         # Called with the response returned from the downloader.

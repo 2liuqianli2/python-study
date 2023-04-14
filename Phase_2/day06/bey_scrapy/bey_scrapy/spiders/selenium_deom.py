@@ -3,7 +3,7 @@
 # #
 # # driver=WebDriver()
 # import requests
-import regex as re
+import re
 #
 # url="http://www.che168.com/"
 # header={
@@ -24177,6 +24177,20 @@ cdnURL: "https:\u002F\u002Fsta.guazistatic.com\u002Fguazi-mall-pc\u002F"
 </script>
 """
 rulse=re.compile(r'{(.*?)tag: \[',re.S)
-print(re.findall(rulse,aaa))
+# print(re.findall(rulse,aaa))
 
 # {tag: [
+import requests
+
+
+url="https://www.renrenche.com/fs/ershouche/?plog_id=44119d506369fdc6bf4207d9771541c4"
+
+
+header={
+"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"
+}
+
+a=requests.get(url=url,headers=header)
+with open("./renren.html",'w',encoding='utf-8') as op:
+    op.write(a.text)
+    op.flush()

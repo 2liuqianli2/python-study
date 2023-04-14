@@ -24854,6 +24854,6 @@ class GuaziSpider(scrapy.Spider):
         #     with open("./wenjian.txt",'w',encoding='utf-8') as op:
         #         op.write(cc)
         #         op.flush()
-        a=re.compile(r'value: "(.*?)",')
-        b=re.findall(self.sdf.encode("utf-8"),a)
-        print(b)
+        # a=re.compile(r'value: "(.*?)",')
+        # b=re.findall(self.sdf.encode("utf-8"),a)
+        # print(b)
