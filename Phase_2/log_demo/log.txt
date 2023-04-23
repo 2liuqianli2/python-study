@@ -1,0 +1,6 @@
+warning
+error
+critical
+2023-04-21 18:01:48,774--WARNING--15--warning
+2023-04-21 18:01:48,774--ERROR--16--error
+2023-04-21 18:01:48,774--CRITICAL--17--critical
