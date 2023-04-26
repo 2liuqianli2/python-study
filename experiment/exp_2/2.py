@@ -11,10 +11,18 @@ header={
 res=requests.get(url,headers=header)
 soup=BeautifulSoup(res.content,'lxml')
 
-for i in soup.select('tbody tr td[class="inddline"]>a'):
-    if i.get_text()!="最新电影下载":
 
-        print(i.get_text())
+with open("./move_name.text",'w+',encoding='utf-8') as op:
+    for i in soup.select('tr td[class="inddline"]>a'):
+        if len(i.get_text()) > 7:
+            op.write(i.get_text())
+            op.write("\n")
+            op.flush()
+
+
+
+
+        # print(i.get_text())
 
 
 # for i in a:
