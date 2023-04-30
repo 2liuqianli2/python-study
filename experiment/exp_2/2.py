@@ -18,7 +18,7 @@ with open("./move_name.text",'w+',encoding='utf-8') as op:
             op.write(i.get_text())
             op.write("\n")
             op.flush()
-
+        # 网络爬虫与数据采集
 
 
 
